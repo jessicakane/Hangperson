@@ -1,0 +1,769 @@
+{
+  "hightech": [
+    {
+      "question": "The programming language known for its use in web development and creating dynamic web pages is?",
+      "hint": "Starts with 'J'",
+      "answer": "JavaScript"
+    },
+    {
+      "question": "The process of finding and fixing errors in software is called?",
+      "hint": "Starts with 'D'",
+      "answer": "Debugging"
+    },
+    {
+      "question": "The markup language used for structuring content on the web is?",
+      "hint": "Abbreviation: 'H.T.'",
+      "answer": "HTML"
+    },
+    {
+      "question": "The language used for creating and manipulating databases is?",
+      "hint": "Abbreviation: 'S.Q.L.'",
+      "answer": "SQL"
+    },
+    {
+      "question": "The high-level programming language developed by Microsoft is?",
+      "hint": "Starts with 'C', ends with '#'",
+      "answer": "CSharp"
+    },
+    {
+      "question": "The version control system popular among developers is?",
+      "hint": "Starts with 'G'",
+      "answer": "Git"
+    },
+    {
+      "question": "The style sheet language used for designing web pages is?",
+      "hint": "Abbreviation: 'C.S.S.'",
+      "answer": "CSS"
+    },
+    {
+      "question": "The programming language used for creating mobile applications is?",
+      "hint": "Starts with 'J'",
+      "answer": "Java"
+    },
+    {
+      "question": "The cloud computing platform provided by Amazon is called?",
+      "hint": "Abbreviation: 'A.W.S.'",
+      "answer": "AWS"
+    },
+    {
+      "question": "The object-oriented programming language used for developing iOS applications is?",
+      "hint": "Starts with 'S'",
+      "answer": "Swift"
+    },
+    {
+      "question": "The programming language used for creating dynamic web pages and server-side scripting is?",
+      "hint": "Abbreviation: 'P.H.P.'",
+      "answer": "PHP"
+    },
+    {
+      "question": "The lightweight JavaScript library for DOM manipulation is?",
+      "hint": "Abbreviation: 'j.Q.'",
+      "answer": "jQuery"
+    },
+    {
+      "question": "The widely-used relational database management system is?",
+      "hint": "Abbreviation: 'M.S.S.'",
+      "answer": "MySQL"
+    },
+    {
+      "question": "The programming language used for building Android applications is?",
+      "hint": "Starts with 'J'",
+      "answer": "Java"
+    },
+    {
+      "question": "The cloud computing platform provided by Google is called?",
+      "hint": "Abbreviation: 'G.C.P.'",
+      "answer": "GCP"
+    },
+    {
+      "question": "The server-side JavaScript runtime environment is?",
+      "hint": "Abbreviation: 'N.J.S.'",
+      "answer": "Node"
+    },
+    {
+      "question": "The widely-used web browser developed by Mozilla is called?",
+      "hint": "Starts with 'F'",
+      "answer": "Firefox"
+    },
+    {
+      "question": "The programming language used for creating desktop applications is?",
+      "hint": "Starts with 'C'",
+      "answer": "CSharp"
+    },
+    {
+      "question": "The lightweight web framework for building server-side applications is?",
+      "hint": "Abbreviation: 'F.L.'",
+      "answer": "Flask"
+    },
+    {
+      "question": "The cloud computing platform provided by Microsoft is called?",
+      "hint": "Abbreviation: 'A.'",
+      "answer": "Azure"
+    },
+    {
+      "question": "The programming language used for machine learning and data analysis is?",
+      "hint": "Abbreviation: 'P.Y.'",
+      "answer": "Python"
+    },
+    {
+      "question": "The widely-used front-end framework developed by Facebook is called?",
+      "hint": "Abbreviation: 'R.'",
+      "answer": "React"
+    },
+    {
+      "question": "The widely-used text editor known for its extensibility is?",
+      "hint": "Abbreviation: 'V.S.C.'",
+      "answer": "VSCode"
+    },
+    {
+      "question": "The scripting language used for web scraping and automation is?",
+      "hint": "Abbreviation: 'P.'",
+      "answer": "Python"
+    },
+    {
+      "question": "The programming language known for its use in data science and statistical computing is?",
+      "hint": "Abbreviation: 'R.'",
+      "answer": "R"
+    }
+  ],
+  "music": [
+    {
+      "question": "The musical instrument known for its large size and deep sound is?",
+      "hint": "Starts with 'P'",
+      "answer": "Piano"
+    },
+    {
+      "question": "The musical genre known for its fast-paced rhythms and energetic beats is?",
+      "hint": "Abbreviation: 'R.'",
+      "answer": "Rock"
+    },
+    {
+      "question": "The electronic musical instrument popularized by synthesizer players is?",
+      "hint": "Abbreviation: 'K.'",
+      "answer": "Keyboard"
+    },
+    {
+      "question": "The small-sized string instrument often associated with Hawaiian music is?",
+      "hint": "Abbreviation: 'U.'",
+      "answer": "Ukulele"
+    },
+    {
+      "question": "The musical genre known for its improvisation and syncopated rhythms is?",
+      "hint": "Abbreviation: 'J.'",
+      "answer": "Jazz"
+    },
+    {
+      "question": "The woodwind instrument known for its smooth and mellow sound is?",
+      "hint": "Starts with 'S'",
+      "answer": "Saxophone"
+    },
+    {
+      "question": "The musical instrument that is struck with mallets to produce sound is?",
+      "hint": "Starts with 'D'",
+      "answer": "Drums"
+    },
+    {
+      "question": "The vocal technique of producing two pitches simultaneously is called?",
+      "hint": "Starts with 'B'",
+      "answer": "Beatboxing"
+    },
+    {
+      "question": "The musical genre characterized by its repetitive beats and electronic instrumentation is?",
+      "hint": "Abbreviation: 'T.'",
+      "answer": "Techno"
+    },
+    {
+      "question": "The brass instrument known for its bright and powerful sound is?",
+      "hint": "Starts with 'T'",
+      "answer": "Trumpet"
+    },
+    {
+      "question": "The musical genre that originated in Jamaica and features offbeat rhythms is?",
+      "hint": "Abbreviation: 'R.'",
+      "answer": "Reggae"
+    },
+    {
+      "question": "The percussion instrument consisting of a set of wooden bars is?",
+      "hint": "Starts with 'X'",
+      "answer": "Xylophone"
+    },
+    {
+      "question": "The musical style known for its emotional expression and storytelling is?",
+      "hint": "Starts with 'B'",
+      "answer": "Blues"
+    },
+    {
+      "question": "The bowed string instrument with four strings and a warm tone is?",
+      "hint": "Starts with 'V'",
+      "answer": "Violin"
+    },
+    {
+      "question": "The musical genre characterized by its fast tempo and complex guitar playing is?",
+      "hint": "Abbreviation: 'M.'",
+      "answer": "Metal"
+    },
+    {
+      "question": "The percussion instrument consisting of a series of metal plates is?",
+      "hint": "Abbreviation: 'C.'",
+      "answer": "Cymbals"
+    },
+    {
+      "question": "The musical style characterized by its upbeat tempo and catchy melodies is?",
+      "hint": "Abbreviation: 'P.'",
+      "answer": "Pop"
+    },
+    {
+      "question": "The electronic musical instrument known for its ability to create a wide range of sounds is?",
+      "hint": "Abbreviation: 'S.'",
+      "answer": "Synthesizer"
+    },
+    {
+      "question": "The vocal technique of singing without the use of words is called?",
+      "hint": "Starts with 'S'",
+      "answer": "Scatting"
+    },
+    {
+      "question": "The musical genre that blends elements of hip-hop and R&B is?",
+      "hint": "Starts with 'T'",
+      "answer": "Trap"
+    },
+    {
+      "question": "The wind instrument known for its distinctive sound and use in marching bands is?",
+      "hint": "Starts with 'T'",
+      "answer": "Trombone"
+    },
+    {
+      "question": "The musical genre characterized by its high energy, fast tempo, and aggressive vocals is?",
+      "hint": "Starts with 'P'",
+      "answer": "Punk"
+    },
+    {
+      "question": "The string instrument known for its deep sound and large size is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cello"
+    },
+    {
+      "question": "The percussion instrument played by shaking or striking is?",
+      "hint": "Starts with 'M'",
+      "answer": "Maracas"
+    }
+  ],
+  "cities": [
+    {
+      "question": "The capital city of France is?",
+      "hint": "Starts with 'P'",
+      "answer": "Paris"
+    },
+    {
+      "question": "The largest city in Brazil is?",
+      "hint": "Starts with 'S'",
+      "answer": "SaoPaulo"
+    },
+    {
+      "question": "The capital city of Japan is?",
+      "hint": "Starts with 'T'",
+      "answer": "Tokyo"
+    },
+    {
+      "question": "The city famous for its canals and gondolas is?",
+      "hint": "Starts with 'V'",
+      "answer": "Venice"
+    },
+    {
+      "question": "The capital city of India is?",
+      "hint": "Starts with 'N'",
+      "answer": "NewDelhi"
+    },
+    {
+      "question": "The largest city in Australia is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sydney"
+    },
+    {
+      "question": "The city known for its historical ruins and colosseum is?",
+      "hint": "Starts with 'R'",
+      "answer": "Rome"
+    },
+    {
+      "question": "The capital city of Russia is?",
+      "hint": "Starts with 'M'",
+      "answer": "Moscow"
+    },
+    {
+      "question": "The city famous for its carnival celebration is?",
+      "hint": "Starts with 'R'",
+      "answer": "RioDeJaneiro"
+    },
+    {
+      "question": "The capital city of South Korea is?",
+      "hint": "Starts with 'S'",
+      "answer": "Seoul"
+    },
+    {
+      "question": "The city known for its skyscrapers and financial district is?",
+      "hint": "Starts with 'N'",
+      "answer": "NewYork"
+    },
+    {
+      "question": "The capital city of United Arab Emirates is?",
+      "hint": "Starts with 'A'",
+      "answer": "AbuDhabi"
+    },
+    {
+      "question": "The city famous for its red telephone booths and double-decker buses is?",
+      "hint": "Starts with 'L'",
+      "answer": "London"
+    },
+    {
+      "question": "The capital city of Egypt is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cairo"
+    },
+    {
+      "question": "The city known for its iconic Golden Gate Bridge is?",
+      "hint": "Starts with 'S'",
+      "answer": "SanFrancisco"
+    },
+    {
+      "question": "The capital city of Canada is?",
+      "hint": "Starts with 'O'",
+      "answer": "Ottawa"
+    },
+    {
+      "question": "The city famous for its tulip fields and canals is?",
+      "hint": "Starts with 'A'",
+      "answer": "Amsterdam"
+    },
+    {
+      "question": "The capital city of Argentina is?",
+      "hint": "Starts with 'B'",
+      "answer": "BuenosAires"
+    },
+    {
+      "question": "The city known for its famous statue of Christ the Redeemer is?",
+      "hint": "Starts with 'R'",
+      "answer": "RioDeJaneiro"
+    },
+    {
+      "question": "The capital city of Spain is?",
+      "hint": "Starts with 'M'",
+      "answer": "Madrid"
+    },
+    {
+      "question": "The city famous for its opera house and harbor is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sydney"
+    },
+    {
+      "question": "The capital city of China is?",
+      "hint": "Starts with 'B'",
+      "answer": "Beijing"
+    },
+    {
+      "question": "The city known for its historical significance and famous wall is?",
+      "hint": "Starts with 'R'",
+      "answer": "Rome"
+    },
+    {
+      "question": "The capital city of Germany is?",
+      "hint": "Starts with 'B'",
+      "answer": "Berlin"
+    },
+    {
+      "question": "The city famous for its opera and classical music is?",
+      "hint": "Starts with 'V'",
+      "answer": "Vienna"
+    },
+    {
+      "question": "The capital city of Mexico is?",
+      "hint": "Starts with 'M'",
+      "answer": "MexicoCity"
+    }
+  ],
+  "cars": [
+    {
+      "question": "The German luxury car brand known for its iconic three-pointed star logo is?",
+      "hint": "Starts with 'M'",
+      "answer": "Mercedes"
+    },
+    {
+      "question": "The Italian luxury sports car manufacturer known for its prancing horse logo is?",
+      "hint": "Starts with 'F'",
+      "answer": "Ferrari"
+    },
+    {
+      "question": "The Japanese automaker known for its fuel-efficient hybrid vehicles is?",
+      "hint": "Starts with 'T'",
+      "answer": "Toyota"
+    },
+    {
+      "question": "The American electric car manufacturer known for its Model S and Model 3 is?",
+      "hint": "Starts with 'T'",
+      "answer": "Tesla"
+    },
+    {
+      "question": "The German automaker known for its 'ultimate driving machines' is?",
+      "hint": "Starts with 'B'",
+      "answer": "BMW"
+    },
+    {
+      "question": "The American luxury car brand known for its distinctive grille design is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cadillac"
+    },
+    {
+      "question": "The Italian luxury car manufacturer known for its stylish and powerful cars is?",
+      "hint": "Starts with 'L'",
+      "answer": "Lamborghini"
+    },
+    {
+      "question": "The Japanese automaker known for its compact and fuel-efficient cars is?",
+      "hint": "Starts with 'H'",
+      "answer": "Honda"
+    },
+    {
+      "question": "The German automaker known for its sporty and performance-oriented cars is?",
+      "hint": "Starts with 'A'",
+      "answer": "Audi"
+    },
+    {
+      "question": "The American automaker known for its iconic Mustang and F-150 is?",
+      "hint": "Starts with 'F'",
+      "answer": "Ford"
+    },
+    {
+      "question": "The Swedish automaker known for its emphasis on safety is?",
+      "hint": "Starts with 'V'",
+      "answer": "Volvo"
+    },
+    {
+      "question": "The German luxury car brand known for its sporty and elegant designs is?",
+      "hint": "Starts with 'P'",
+      "answer": "Porsche"
+    },
+    {
+      "question": "The Japanese automaker known for its reliable and affordable cars is?",
+      "hint": "Starts with 'N'",
+      "answer": "Nissan"
+    },
+    {
+      "question": "The American automaker known for its off-road vehicles and Wrangler is?",
+      "hint": "Starts with 'J'",
+      "answer": "Jeep"
+    },
+    {
+      "question": "The British luxury car manufacturer known for its elegant and handcrafted cars is?",
+      "hint": "Starts with 'R'",
+      "answer": "RollsRoyce"
+    },
+    {
+      "question": "The German automaker known for its compact and stylish cars is?",
+      "hint": "Starts with 'V'",
+      "answer": "Volkswagen"
+    },
+    {
+      "question": "The Italian automaker known for its small and colorful cars is?",
+      "hint": "Starts with 'F'",
+      "answer": "Fiat"
+    },
+    {
+      "question": "The American automaker known for its pickup trucks and commercial vehicles is?",
+      "hint": "Starts with 'G'",
+      "answer": "GeneralMotors"
+    },
+    {
+      "question": "The Japanese automaker known for its luxury vehicles and Infiniti brand is?",
+      "hint": "Starts with 'L'",
+      "answer": "Lexus"
+    },
+    {
+      "question": "The German luxury car brand known for its performance-oriented AMG models is?",
+      "hint": "Starts with 'M'",
+      "answer": "Mercedes"
+    },
+    {
+      "question": "The American automaker known for its muscle cars and Challenger is?",
+      "hint": "Starts with 'D'",
+      "answer": "Dodge"
+    },
+    {
+      "question": "The British automaker known for its luxury sports cars is?",
+      "hint": "Starts with 'A'",
+      "answer": "AstonMartin"
+    },
+    {
+      "question": "The Japanese automaker known for its all-wheel drive technology and Outback model is?",
+      "hint": "Starts with 'S'",
+      "answer": "Subaru"
+    },
+    {
+      "question": "The Italian automaker known for its compact and affordable cars is?",
+      "hint": "Starts with 'A'",
+      "answer": "AlfaRomeo"
+    },
+    {
+      "question": "The American automaker known for its luxury electric vehicles and Escalade is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cadillac"
+    },
+    {
+      "question": "The German automaker known for its innovative and environmentally-friendly cars is?",
+      "hint": "Starts with 'V'",
+      "answer": "Volkswagen"
+    }
+  ],
+  "weather": [
+    {
+      "question": "The atmospheric condition characterized by low visibility and droplets suspended in the air is?",
+      "hint": "Starts with 'F'",
+      "answer": "Fog"
+    },
+    {
+      "question": "The weather phenomenon characterized by a rotating column of air extending from a thunderstorm to the ground is?",
+      "hint": "Starts with 'T'",
+      "answer": "Tornado"
+    },
+    {
+      "question": "The atmospheric condition characterized by a rapid drop in temperature and frozen precipitation is?",
+      "hint": "Starts with 'S'",
+      "answer": "Snow"
+    },
+    {
+      "question": "The weather phenomenon characterized by the swirling winds and low-pressure center is?",
+      "hint": "Starts with 'H'",
+      "answer": "Hurricane"
+    },
+    {
+      "question": "The atmospheric condition characterized by high temperatures and intense sunlight is?",
+      "hint": "Starts with 'H'",
+      "answer": "Heatwave"
+    },
+    {
+      "question": "The weather phenomenon characterized by a sudden and brief heavy rainfall is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cloudburst"
+    },
+    {
+      "question": "The atmospheric condition characterized by a mixture of rain and snow is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sleet"
+    },
+    {
+      "question": "The weather phenomenon characterized by an abrupt and violent change in weather conditions is?",
+      "hint": "Starts with 'S'",
+      "answer": "Storm"
+    },
+    {
+      "question": "The atmospheric condition characterized by a steady fall of water droplets from the clouds is?",
+      "hint": "Starts with 'R'",
+      "answer": "Rain"
+    },
+    {
+      "question": "The weather phenomenon characterized by an extended period of hot and dry weather is?",
+      "hint": "Starts with 'D'",
+      "answer": "Drought"
+    },
+    {
+      "question": "The atmospheric condition characterized by a strong wind blowing in a specific direction is?",
+      "hint": "Starts with 'G'",
+      "answer": "Gale"
+    },
+    {
+      "question": "The weather phenomenon characterized by the movement of a large body of cold air mass over a warmer air mass is?",
+      "hint": "Starts with 'C'",
+      "answer": "ColdFront"
+    },
+    {
+      "question": "The atmospheric condition characterized by a hazy appearance due to suspended particles is?",
+      "hint": "Starts with 'S'",
+      "answer": "Smog"
+    },
+    {
+      "question": "The weather phenomenon characterized by a brief period of heavy rainfall and thunderstorms is?",
+      "hint": "Starts with 'S'",
+      "answer": "Shower"
+    },
+    {
+      "question": "The atmospheric condition characterized by low temperatures and frozen water vapor is?",
+      "hint": "Starts with 'I'",
+      "answer": "Ice"
+    },
+    {
+      "question": "The weather phenomenon characterized by the formation of ice crystals on surfaces is?",
+      "hint": "Starts with 'F'",
+      "answer": "Frost"
+    },
+    {
+      "question": "The atmospheric condition characterized by a sudden drop in temperature and frozen ground is?",
+      "hint": "Starts with 'F'",
+      "answer": "Freeze"
+    },
+    {
+      "question": "The weather phenomenon characterized by a rotating column of air extending from a cumulonimbus cloud is?",
+      "hint": "Starts with 'L'",
+      "answer": "Lightning"
+    },
+    {
+      "question": "The atmospheric condition characterized by a steady fall of small ice pellets is?",
+      "hint": "Starts with 'H'",
+      "answer": "Hail"
+    },
+    {
+      "question": "The weather phenomenon characterized by a mass of warm air moving over a cold air mass is?",
+      "hint": "Starts with 'W'",
+      "answer": "WarmFront"
+    },
+    {
+      "question": "The atmospheric condition characterized by strong winds and a low-pressure center is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cyclone"
+    },
+    {
+      "question": "The weather phenomenon characterized by a gradual increase in temperature and longer daylight hours is?",
+      "hint": "Starts with 'S'",
+      "answer": "Spring"
+    },
+    {
+      "question": "The atmospheric condition characterized by calm winds and clear skies is?",
+      "hint": "Starts with 'F'",
+      "answer": "Fair"
+    },
+    {
+      "question": "The weather phenomenon characterized by a sudden and significant drop in atmospheric pressure is?",
+      "hint": "Starts with 'T'",
+      "answer": "TropicalStorm"
+    }
+  ],
+  "food": [
+    {
+      "question": "A round, dough-based baked bread product often topped with cheese and tomato sauce is?",
+      "hint": "Starts with 'P'",
+      "answer": "Pizza"
+    },
+    {
+      "question": "A small, round fruit with a thin outer layer and juicy interior is?",
+      "hint": "Starts with 'A'",
+      "answer": "Apple"
+    },
+    {
+      "question": "A sweet, frozen dessert made from milk or cream and flavored with various ingredients is?",
+      "hint": "Starts with 'I'",
+      "answer": "IceCream"
+    },
+    {
+      "question": "A popular Mexican dish consisting of a folded tortilla filled with various ingredients is?",
+      "hint": "Starts with 'T'",
+      "answer": "Taco"
+    },
+    {
+      "question": "A long, cylindrical meat product made from ground beef or pork is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sausage"
+    },
+    {
+      "question": "A hot, brewed beverage made from roasted coffee beans is?",
+      "hint": "Starts with 'C'",
+      "answer": "Coffee"
+    },
+    {
+      "question": "A round, fried doughnut-like dessert often covered in powdered sugar is?",
+      "hint": "Starts with 'B'",
+      "answer": "Beignet"
+    },
+    {
+      "question": "A type of pasta shaped like tubes or cylinders is?",
+      "hint": "Starts with 'P'",
+      "answer": "Penne"
+    },
+    {
+      "question": "A traditional Japanese dish consisting of vinegared rice and various toppings is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sushi"
+    },
+    {
+      "question": "A popular sandwich made with two slices of bread and various fillings is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sandwich"
+    },
+    {
+      "question": "A type of Italian pasta shaped like small ears is?",
+      "hint": "Starts with 'O'",
+      "answer": "Orecchiette"
+    },
+    {
+      "question": "A small, round citrus fruit with a sour taste is?",
+      "hint": "Starts with 'L'",
+      "answer": "Lemon"
+    },
+    {
+      "question": "A type of bread product made from a dough of flour, water, and yeast is?",
+      "hint": "Starts with 'B'",
+      "answer": "Bread"
+    },
+    {
+      "question": "A round, sweet dessert made from flour, sugar, and eggs is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cake"
+    },
+    {
+      "question": "A type of fast food made from ground meat, often served on a bun is?",
+      "hint": "Starts with 'B'",
+      "answer": "Burger"
+    },
+    {
+      "question": "A popular Italian dish consisting of thin, flat pasta strips is?",
+      "hint": "Starts with 'L'",
+      "answer": "Lasagna"
+    },
+    {
+      "question": "A creamy, fermented dairy product often used in desserts and sauces is?",
+      "hint": "Starts with 'Y'",
+      "answer": "Yogurt"
+    },
+    {
+      "question": "A thick, savory soup made from pureed vegetables is?",
+      "hint": "Starts with 'S'",
+      "answer": "Soup"
+    },
+    {
+      "question": "A green, leafy vegetable often used in salads is?",
+      "hint": "Starts with 'L'",
+      "answer": "Lettuce"
+    },
+    {
+      "question": "A type of Italian bread often flavored with garlic and herbs is?",
+      "hint": "Starts with 'C'",
+      "answer": "Ciabatta"
+    },
+    {
+      "question": "A sweet, baked dessert made from flour, sugar, and eggs is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cookie"
+    },
+    {
+      "question": "A hot, spiced beverage made from tea, milk, and various spices is?",
+      "hint": "Starts with 'C'",
+      "answer": "Chai"
+    },
+    {
+      "question": "A soft, flat bread often used to wrap various fillings is?",
+      "hint": "Starts with 'T'",
+      "answer": "Tortilla"
+    },
+    {
+      "question": "A popular Italian dish consisting of thin, round dough topped with cheese and various ingredients is?",
+      "hint": "Starts with 'P'",
+      "answer": "Pizza"
+    },
+    {
+      "question": "A creamy, frozen dessert made from milk, sugar, and flavors is?",
+      "hint": "Starts with 'G'",
+      "answer": "Gelato"
+    },
+    {
+      "question": "A long, tubular pasta often used in baked dishes is?",
+      "hint": "Starts with 'Z'",
+      "answer": "Ziti"
+    }
+  ]
+}
