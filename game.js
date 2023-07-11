@@ -27,5 +27,8 @@ window.addEventListener('load', async () => {
   const { question, hint, answer } = getQuestion(category, data);
 
   questionElement.innerText = question;
-  answerElement.innerText = '*'.repeat(answer.length);
+  const answerHTML = `<img src="./images/input_square.png"/>`.repeat(
+    answer.length
+  );
+  answerElement.innerHTML = answerHTML;
 });
