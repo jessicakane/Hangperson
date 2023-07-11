@@ -11,6 +11,7 @@
 .letter img:hover {
     filter: brightness(70%);
     background-color: transparent;
+    cursor: pointer;
 }
 
   .keyboard-container1 {
@@ -21,4 +22,15 @@
   .keyboard-container2 {
     width: 30%;
     height: 30%;
+  }
+
+  .answer-square img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 9px;
+  }
+
+  .answer-container {
+    width: 40%;
+    height: 40%;
   }
