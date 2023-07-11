@@ -1,0 +1,31 @@
+.d-flex {
+    /*border: 2px solid red;*/
+}
+
+/*.letter {
+    width: 12rem; 
+    height: 10rem; 
+    overflow: hidden;
+    background-color: transparent;
+}
+*/
+.letter img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 9px;
+  }
+
+.letter img:hover {
+    filter: brightness(70%);
+    background-color: transparent;
+}
+
+  .keyboard-container1 {
+    width: 50%;
+    height: 50%;
+  }
+
+  .keyboard-container2 {
+    width: 30%;
+    height: 30%;
+  }
