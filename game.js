@@ -4,31 +4,46 @@ const answerElement = document.querySelector('#answer');
 const livesElement = document.querySelector('#lives');
 
 const category = 'hightech';
-const livesLeft = 10;
-
-const fetchQuestions = async (path) => {
-  const res = await fetch(path);
-  const data = await res.json();
-  return data;
-};
-
-const getQuestion = (category, data) => {
-  const categoryData = data[category];
-  const index = Math.floor(Math.random() * categoryData.length);
-  return categoryData[index];
-};
-
-const handleLetterClick = (letter) => {
-  if (livesLeft-- === 0) console.log('you lost');
-};
-
-letters.forEach((letterEl) =>
-  letterEl.addEventListener('click', () =>
-    console.log(letterEl.dataset.letter, 'is clicked')
-  )
-);
+let livesLeft = 10;
+const solvedLetIndexes = [];
 
 window.addEventListener('load', async () => {
+  const fetchQuestions = async (path) => {
+    const res = await fetch(path);
+    const data = await res.json();
+    return data;
+  };
+
+  const getQuestion = (category, data) => {
+    const categoryData = data[category];
+    const index = Math.floor(Math.random() * categoryData.length);
+    return categoryData[index];
+  };
+
+  const renderAnswer = (indexes) => {
+    for (let i = 0; i < answer.length; i++) {
+      if (indexes.includes(i)) {
+        const letterEl = document.createElement('span');
+        letterEl.innerText = answer[i];
+        answerElement.replaceChild(letterEl, answerElement.children[i]);
+      }
+    }
+  };
+
+  const handleLetterClick = (letter) => {
+    if (livesLeft-- === 0) console.log('you lost');
+    const indexes = [...answer.matchAll(new RegExp(letter, 'gi'))].map(
+      (a) => a.index
+    );
+    renderAnswer(indexes);
+  };
+
+  letters.forEach((letterEl) =>
+    letterEl.addEventListener('click', () =>
+      handleLetterClick(letterEl.dataset.letter)
+    )
+  );
+
   const data = await fetchQuestions('./data.json');
   const { question, hint, answer } = getQuestion(category, data);
 
