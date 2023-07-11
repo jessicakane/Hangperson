@@ -7,23 +7,27 @@ html
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   height: 800px;
+}
+
+* {
+  font-family: 'Indie Flower';
 }
 
 .item1 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .left-top{
  flex: 1;
- border: 1px solid red;
+ /*border: 1px solid red;*/
 }
 .left-bottom{
   flex: 1;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .item2{
   display: flex;
@@ -54,5 +58,54 @@ html
     width: 30%;
     height: 30%;
   }
+
+  /* #line1, #line2, #line3, #line4, #head, #line5, #line6, #line7, #line8*/ 
+  .draw-line {
+    stroke: black;
+    stroke-width: 4;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    animation: drawLine 1s forwards;
+  }
+  
+  @keyframes drawLine {
+    from {
+      stroke-dashoffset: 100%;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .stats-title {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    flex-basis: 17%;
+    background-color: rgba(141, 173, 198, 0.5);
+    position: relative;
+  }
+
+  .stats {
+    flex: 1;
+    position: relative;
+   
+  }
+
+  .lead {
+    font-size: 2rem;
+  }
+
+  .stats-container {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(174, 211, 240, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+  }
+
+
 
 
