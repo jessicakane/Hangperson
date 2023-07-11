@@ -512,128 +512,6 @@
       "answer": "Volkswagen"
     }
   ],
-  "weather": [
-    {
-      "question": "The atmospheric condition characterized by low visibility and droplets suspended in the air is?",
-      "hint": "Starts with 'F'",
-      "answer": "Fog"
-    },
-    {
-      "question": "The weather phenomenon characterized by a rotating column of air extending from a thunderstorm to the ground is?",
-      "hint": "Starts with 'T'",
-      "answer": "Tornado"
-    },
-    {
-      "question": "The atmospheric condition characterized by a rapid drop in temperature and frozen precipitation is?",
-      "hint": "Starts with 'S'",
-      "answer": "Snow"
-    },
-    {
-      "question": "The weather phenomenon characterized by the swirling winds and low-pressure center is?",
-      "hint": "Starts with 'H'",
-      "answer": "Hurricane"
-    },
-    {
-      "question": "The atmospheric condition characterized by high temperatures and intense sunlight is?",
-      "hint": "Starts with 'H'",
-      "answer": "Heatwave"
-    },
-    {
-      "question": "The weather phenomenon characterized by a sudden and brief heavy rainfall is?",
-      "hint": "Starts with 'C'",
-      "answer": "Cloudburst"
-    },
-    {
-      "question": "The atmospheric condition characterized by a mixture of rain and snow is?",
-      "hint": "Starts with 'S'",
-      "answer": "Sleet"
-    },
-    {
-      "question": "The weather phenomenon characterized by an abrupt and violent change in weather conditions is?",
-      "hint": "Starts with 'S'",
-      "answer": "Storm"
-    },
-    {
-      "question": "The atmospheric condition characterized by a steady fall of water droplets from the clouds is?",
-      "hint": "Starts with 'R'",
-      "answer": "Rain"
-    },
-    {
-      "question": "The weather phenomenon characterized by an extended period of hot and dry weather is?",
-      "hint": "Starts with 'D'",
-      "answer": "Drought"
-    },
-    {
-      "question": "The atmospheric condition characterized by a strong wind blowing in a specific direction is?",
-      "hint": "Starts with 'G'",
-      "answer": "Gale"
-    },
-    {
-      "question": "The weather phenomenon characterized by the movement of a large body of cold air mass over a warmer air mass is?",
-      "hint": "Starts with 'C'",
-      "answer": "ColdFront"
-    },
-    {
-      "question": "The atmospheric condition characterized by a hazy appearance due to suspended particles is?",
-      "hint": "Starts with 'S'",
-      "answer": "Smog"
-    },
-    {
-      "question": "The weather phenomenon characterized by a brief period of heavy rainfall and thunderstorms is?",
-      "hint": "Starts with 'S'",
-      "answer": "Shower"
-    },
-    {
-      "question": "The atmospheric condition characterized by low temperatures and frozen water vapor is?",
-      "hint": "Starts with 'I'",
-      "answer": "Ice"
-    },
-    {
-      "question": "The weather phenomenon characterized by the formation of ice crystals on surfaces is?",
-      "hint": "Starts with 'F'",
-      "answer": "Frost"
-    },
-    {
-      "question": "The atmospheric condition characterized by a sudden drop in temperature and frozen ground is?",
-      "hint": "Starts with 'F'",
-      "answer": "Freeze"
-    },
-    {
-      "question": "The weather phenomenon characterized by a rotating column of air extending from a cumulonimbus cloud is?",
-      "hint": "Starts with 'L'",
-      "answer": "Lightning"
-    },
-    {
-      "question": "The atmospheric condition characterized by a steady fall of small ice pellets is?",
-      "hint": "Starts with 'H'",
-      "answer": "Hail"
-    },
-    {
-      "question": "The weather phenomenon characterized by a mass of warm air moving over a cold air mass is?",
-      "hint": "Starts with 'W'",
-      "answer": "WarmFront"
-    },
-    {
-      "question": "The atmospheric condition characterized by strong winds and a low-pressure center is?",
-      "hint": "Starts with 'C'",
-      "answer": "Cyclone"
-    },
-    {
-      "question": "The weather phenomenon characterized by a gradual increase in temperature and longer daylight hours is?",
-      "hint": "Starts with 'S'",
-      "answer": "Spring"
-    },
-    {
-      "question": "The atmospheric condition characterized by calm winds and clear skies is?",
-      "hint": "Starts with 'F'",
-      "answer": "Fair"
-    },
-    {
-      "question": "The weather phenomenon characterized by a sudden and significant drop in atmospheric pressure is?",
-      "hint": "Starts with 'T'",
-      "answer": "TropicalStorm"
-    }
-  ],
   "food": [
     {
       "question": "A round, dough-based baked bread product often topped with cheese and tomato sauce is?",
@@ -764,6 +642,265 @@
       "question": "A long, tubular pasta often used in baked dishes is?",
       "hint": "Starts with 'Z'",
       "answer": "Ziti"
+    }
+  ],
+  "animals": [
+    {
+      "question": "The largest land animal known for its long trunk and tusks is?",
+      "hint": "Starts with 'E'",
+      "answer": "Elephant"
+    },
+    {
+      "question": "A small domesticated animal often kept as a pet and known for its purring is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cat"
+    },
+    {
+      "question": "A large, strong mammal known for its distinctive black and white fur is?",
+      "hint": "Starts with 'P'",
+      "answer": "Panda"
+    },
+    {
+      "question": "A winged creature known for its ability to fly and build nests is?",
+      "hint": "Starts with 'B'",
+      "answer": "Bird"
+    },
+    {
+      "question": "A marine animal known for its intelligence and communication skills is?",
+      "hint": "Starts with 'D'",
+      "answer": "Dolphin"
+    },
+    {
+      "question": "A small, furry animal often kept as a pet and known for storing nuts is?",
+      "hint": "Starts with 'S'",
+      "answer": "Squirrel"
+    },
+    {
+      "question": "A large, striped cat known for its strength and hunting abilities is?",
+      "hint": "Starts with 'T'",
+      "answer": "Tiger"
+    },
+    {
+      "question": "A marine animal known for its long neck and ability to swim is?",
+      "hint": "Starts with 'G'",
+      "answer": "Giraffe"
+    },
+    {
+      "question": "A small, venomous reptile often associated with desert environments is?",
+      "hint": "Starts with 'S'",
+      "answer": "Snake"
+    },
+    {
+      "question": "A large, aquatic mammal known for its playful behavior and intelligence is?",
+      "hint": "Starts with 'D'",
+      "answer": "Dolphin"
+    },
+    {
+      "question": "A furry animal known for its sharp claws and ability to climb trees is?",
+      "hint": "Starts with 'B'",
+      "answer": "Bear"
+    },
+    {
+      "question": "A bird known for its ability to mimic sounds and human speech is?",
+      "hint": "Starts with 'P'",
+      "answer": "Parrot"
+    },
+    {
+      "question": "A large, flightless bird known for its strong legs and powerful kick is?",
+      "hint": "Starts with 'O'",
+      "answer": "Ostrich"
+    },
+    {
+      "question": "A marine mammal known for its playful nature and distinctive black and white markings is?",
+      "hint": "Starts with 'O'",
+      "answer": "Orca"
+    },
+    {
+      "question": "A small, fast-moving insect known for its ability to jump long distances is?",
+      "hint": "Starts with 'G'",
+      "answer": "Grasshopper"
+    },
+    {
+      "question": "A large, predatory aquatic animal known for its sharp teeth and powerful jaws is?",
+      "hint": "Starts with 'S'",
+      "answer": "Shark"
+    },
+    {
+      "question": "A small, colorful bird known for its ability to hover in mid-air is?",
+      "hint": "Starts with 'H'",
+      "answer": "Hummingbird"
+    },
+    {
+      "question": "A furry mammal known for its ability to roll into a protective ball is?",
+      "hint": "Starts with 'H'",
+      "answer": "Hedgehog"
+    },
+    {
+      "question": "A large, herbivorous mammal known for its long neck and spots is?",
+      "hint": "Starts with 'G'",
+      "answer": "Giraffe"
+    },
+    {
+      "question": "A small, long-tailed mammal known for its ability to glide through the air is?",
+      "hint": "Starts with 'S'",
+      "answer": "Squirrel"
+    },
+    {
+      "question": "A marine animal known for its eight tentacles and ability to squirt ink is?",
+      "hint": "Starts with 'O'",
+      "answer": "Octopus"
+    },
+    {
+      "question": "A large, slow-moving mammal known for its long tongue and leaf-eating diet is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sloth"
+    },
+    {
+      "question": "A small, nocturnal mammal known for its ability to fly is?",
+      "hint": "Starts with 'B'",
+      "answer": "Bat"
+    },
+    {
+      "question": "A large, wild feline known for its strength and distinctive roar is?",
+      "hint": "Starts with 'L'",
+      "answer": "Lion"
+    },
+    {
+      "question": "A marine animal known for its shell and slow movement is?",
+      "hint": "Starts with 'T'",
+      "answer": "Turtle"
+    },
+    {
+      "question": "A small, venomous arachnid with eight legs and two body segments is?",
+      "hint": "Starts with 'S'",
+      "answer": "Spider"
+    }
+  ],
+  "clothes": [
+    {
+      "question": "A type of footwear that covers the foot and ankle is?",
+      "hint": "Starts with 'S'",
+      "answer": "Shoe"
+    },
+    {
+      "question": "A type of clothing worn on the upper body is?",
+      "hint": "Starts with 'S'",
+      "answer": "Shirt"
+    },
+    {
+      "question": "A type of clothing worn on the lower body is?",
+      "hint": "Starts with 'P'",
+      "answer": "Pants"
+    },
+    {
+      "question": "A piece of clothing worn around the neck is?",
+      "hint": "Starts with 'S'",
+      "answer": "Scarf"
+    },
+    {
+      "question": "A type of clothing worn on the head to protect from the sun is?",
+      "hint": "Starts with 'H'",
+      "answer": "Hat"
+    },
+    {
+      "question": "A type of clothing worn on the hands to keep them warm is?",
+      "hint": "Starts with 'G'",
+      "answer": "Gloves"
+    },
+    {
+      "question": "A type of clothing worn on the feet for warmth and comfort is?",
+      "hint": "Starts with 'S'",
+      "answer": "Socks"
+    },
+    {
+      "question": "A piece of clothing worn around the waist to hold up pants is?",
+      "hint": "Starts with 'B'",
+      "answer": "Belt"
+    },
+    {
+      "question": "A type of clothing worn over other clothes to keep warm is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sweater"
+    },
+    {
+      "question": "A type of clothing worn to cover the legs is?",
+      "hint": "Starts with 'S'",
+      "answer": "Skirt"
+    },
+    {
+      "question": "A type of clothing worn by women that covers the torso is?",
+      "hint": "Starts with 'B'",
+      "answer": "Blouse"
+    },
+    {
+      "question": "A type of clothing worn to protect the body from the rain is?",
+      "hint": "Starts with 'C'",
+      "answer": "Coat"
+    },
+    {
+      "question": "A type of clothing worn on the feet for sports or physical activities is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sneakers"
+    },
+    {
+      "question": "A type of clothing worn for swimming is?",
+      "hint": "Starts with 'S'",
+      "answer": "Swimsuit"
+    },
+    {
+      "question": "A type of clothing worn on the feet for formal occasions is?",
+      "hint": "Starts with 'D'",
+      "answer": "DressShoes"
+    },
+    {
+      "question": "A type of clothing worn around the waist as a fashion accessory is?",
+      "hint": "Starts with 'B'",
+      "answer": "Belt"
+    },
+    {
+      "question": "A type of clothing worn by women that covers the chest is?",
+      "hint": "Starts with 'B'",
+      "answer": "Bra"
+    },
+    {
+      "question": "A type of clothing worn on the feet for casual activities is?",
+      "hint": "Starts with 'S'",
+      "answer": "Sneakers"
+    },
+    {
+      "question": "A type of clothing worn on the hands for warmth is?",
+      "hint": "Starts with 'M'",
+      "answer": "Mittens"
+    },
+    {
+      "question": "A type of clothing worn on the feet for sports activities is?",
+      "hint": "Starts with 'T'",
+      "answer": "Trainers"
+    },
+    {
+      "question": "A type of clothing worn on the head for style or warmth is?",
+      "hint": "Starts with 'C'",
+      "answer": "Cap"
+    },
+    {
+      "question": "A type of clothing worn by women that covers the legs is?",
+      "hint": "Starts with 'P'",
+      "answer": "Pantyhose"
+    },
+    {
+      "question": "A type of clothing worn for swimming or sun protection is?",
+      "hint": "Starts with 'R'",
+      "answer": "Rashguard"
+    },
+    {
+      "question": "A type of clothing worn on the feet for formal occasions is?",
+      "hint": "Starts with 'H'",
+      "answer": "Heels"
+    },
+    {
+      "question": "A type of clothing worn to protect the head from the sun is?",
+      "hint": "Starts with 'V'",
+      "answer": "Visor"
     }
   ]
 }
