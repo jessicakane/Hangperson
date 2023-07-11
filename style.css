@@ -136,8 +136,9 @@ html
   }
   
   .icon img:hover {
-    filter: brightness(80) invert(1);
+    filter: brightness(20) invert(0) sepia(2) saturate(150%);
     transition: filter 0.1s;
+    cursor: pointer;
   }
   /*.icon img:hover {
     filter: brightness(80%);
