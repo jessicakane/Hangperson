@@ -1,5 +1,36 @@
-.d-flex {
+/*.d-flex {
     /*border: 2px solid red;*/
+    /*font-family: 'Indie Flower', cursive;*/
+/*}*/
+html
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  height: 800px;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid red;
+}
+.left-top{
+ flex: 1;
+ border: 1px solid red;
+}
+.left-bottom{
+  flex: 1;
+  border: 1px solid red;
+}
+.item2{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+
 }
 
 .letter img {
