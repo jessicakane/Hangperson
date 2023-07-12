@@ -32,6 +32,7 @@ window.addEventListener('load', async () => {
     }
   };
 
+  let index = 1;
   function nextLine() {
     const line = document.getElementById(`line${index}`);
     line.classList.add('draw-line');
