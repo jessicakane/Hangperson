@@ -2,34 +2,92 @@
     /*border: 2px solid red;*/
     /*font-family: 'Indie Flower', cursive;*/
 /*}*/
-html
+*{
+  border: 1px solid red;
+}
+html, body{
+  font-family: 'Indie Flower', cursive;
+  height: 800px;
+  
+}
 .main-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid black;
-  height: 800px;
+  height: 100%;
 }
 
 .item1 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 1px solid red;
 }
 .left-top{
  flex: 1;
- border: 1px solid red;
 }
 .left-bottom{
   flex: 1;
-  border: 1px solid red;
 }
 .item2{
   display: flex;
   flex-direction: column;
   flex: 2;
+}
+.right-top{
+justify-content: center;
+display: flex;
+flex: 1;
 
+top: auto;
+bottom: auto;
+}
+.rt-text {
+  display: flex;
+  align-self: center;
+  font-size:  4rem;
+  color: #CA670F;
+}
+.right-mid{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.mid-top{
+  justify-content: center;
+  display: flex;
+  flex: 1;
+}
+.p2-text{
+  display: flex;
+  align-self: center;
+  font-size:  2.5rem;
+  color: #000;
+  text-decoration: underline;
+}
+.p2-text:hover{
+  color: #CA670F;
+  cursor: pointer;
+}
+.mid-bottom{
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  
+}
+.p1-text{
+  display: flex;
+  align-self: center;
+  font-size:  2.5rem;
+  color: #000;
+  text-decoration: underline;
+}
+.p1-text:hover{
+  color: #CA670F;
+  cursor: pointer;
+}
+
+.right-bottom{
+flex: 1;
 
 }
 
