@@ -94,7 +94,7 @@ html
 
   /* #line1, #line2, #line3, #line4, #head, #line5, #line6, #line7, #line8*/ 
   .draw-line {
-    stroke: black;
+    stroke: white;
     stroke-width: 4;
     stroke-dasharray: 100%;
     stroke-dashoffset: 100%;
@@ -162,6 +162,17 @@ html
 
   .right {
     width: 90%;
+  }
+
+  #hangman-container {
+    background-image: url(./images/chalkboard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
   }
 
   /*.icon img:hover {
