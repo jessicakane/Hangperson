@@ -32,9 +32,10 @@ window.addEventListener('load', async () => {
 
     for (let i = 0; i < answer.length; i++) {
       if (indexes.includes(i)) {
-        const letterEl = document.createElement('span');
-        letterEl.innerText = answer[i];
-        answerElement.replaceChild(letterEl, answerElement.children[i]);
+        const guessedLetterEl = answerElement.children[i].firstElementChild;
+        guessedLetterEl.src = `./images/input_letters/input_${answer[
+          i
+        ].toUpperCase()}.png`;
       }
     }
   };
