@@ -65,7 +65,7 @@ window.addEventListener('load', async () => {
 
   livesElement.innerText = `Lives: ${livesLeft}`;
   questionElement.innerText = question;
-  const answerHTML = `<img src="./images/input_square.png"/>`.repeat(
+  const answerHTML = `<div class="input-square"> <img class = "image-fluid" src="./images/input_square.png"/> </div>`.repeat(
     answer.length
   );
   answerElement.innerHTML = answerHTML;
