@@ -7,30 +7,49 @@ html
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   height: 800px;
+}
+
+* {
+  font-family: 'Indie Flower';
 }
 
 .item1 {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  border: 1px solid red;
+  flex-basis: 30%;
+  /*border: 1px solid red;*/
 }
 .left-top{
  flex: 1;
- border: 1px solid red;
+ /*border: 1px solid red;*/
 }
 .left-bottom{
   flex: 1;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .item2{
   display: flex;
   flex-direction: column;
   flex: 2;
+}
 
+.right-top {
+  flex-basis: 16%;
+  color: #ca660f;
+  border-bottom: 2px solid #feb947;
+  border-right:2px solid #feb947;
+  border-radius: 10px;
+  text-align: center;
+}
 
+.right-mid {
+  flex-basis: 20%;
+}
+
+.right-bottom {
+  flex: 1;
 }
 
 .letter img {
@@ -54,5 +73,80 @@ html
     width: 30%;
     height: 30%;
   }
+
+  /* #line1, #line2, #line3, #line4, #head, #line5, #line6, #line7, #line8*/ 
+  .draw-line {
+    stroke: black;
+    stroke-width: 4;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    animation: drawLine 1s forwards;
+  }
+  
+  @keyframes drawLine {
+    from {
+      stroke-dashoffset: 100%;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .stats-title {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    flex-basis: 17%;
+    background-color: rgba(141, 173, 198, 0.5);
+    position: relative;
+  }
+
+  .stats {
+    flex: 1;
+    position: relative;
+   
+  }
+
+  .lead {
+    font-size: 2rem;
+  }
+
+  .stats-container {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(174, 211, 240, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 40%;
+  }
+
+  .icon img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .category {
+    flex-basis: 21%;
+  }
+
+  .dummy-div {
+    flex: 1;
+  }
+  
+  .icon img:hover {
+    filter: brightness(20) invert(0) sepia(2) saturate(150%);
+    transition: filter 0.1s;
+    cursor: pointer;
+  }
+  /*.icon img:hover {
+    filter: brightness(80%);
+    background-color: transparent;
+    cursor: pointer;
+}*/
+
+
+
 
 

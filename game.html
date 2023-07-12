@@ -1,221 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="lives"></div>
-    <h2 id="question"></h2>
-    <div id="answer"></div>
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <div
-        class="d-flex flex-row justify-content-center p-2 keyboard-container1"
-      >
-        <div class="letter">
-          <img
-            data-letter="a"
-            src="./images/keyboard/letter_A.png"
-            class="image-fluid"
-          />
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="item1">
+                <div class="left-top d-flex flex-column stats-container">
+                    <div class="stats-title display-4">My Game</div>
+                    <div class="stats d-flex flex-column">
+                        <div class="p-4 lead">Lives:</div>
+                        <div class="p-4 lead">Time:</div>
+                    </div>
+                </div>
+                <div class="left-bottom">
+                    <div id="hangman-container">
+                        <svg
+                            id="hangman-svg" xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewbox="0 0 300 400">
+                            <!-- SVG elements for the hangman lines -->
+                            <line id="line1" x1="10" y1="380" x2="290" y2="380"/>
+                            <line id="line2" x1="40" y1="380" x2="40" y2="50"/>
+                            <line id="line3" x1="40" y1="50" x2="200" y2="50"/>
+                            <line id="line4" x1="200" y1="50" x2="200" y2="100"/>
+                            <circle id="line5" cx="200" cy="130" r="30" fill="none"/>
+                            <line id="line6" x1="200" y1="160" x2="200" y2="260"/>
+                            <line id="line7" x1="200" y1="200" x2="170" y2="240"/>
+                            <line id="line8" x1="200" y1="200" x2="230" y2="240"/>
+                            <line id="line9" x1="200" y1="260" x2="170" y2="320"/>
+                            <line id="line10" x1="200" y1="260" x2="230" y2="320"/>
+                        </svg>
+                        <button id="drawButton">Next Line</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item2">
+                <h2 id="question"></h2>
+                <div id="answer"></div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-row justify-content-center p-2 keyboard-container1">
+                        <div class="letter">
+                            <img data-letter="a" src="./images/keyboard/letter_A.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="b" src="./images/keyboard/letter_B.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="c" src="./images/keyboard/letter_C.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="d" src="./images/keyboard/letter_D.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="e" src="./images/keyboard/letter_E.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="f" src="./images/keyboard/letter_F.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="g" src="./images/keyboard/letter_G.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="h" src="./images/keyboard/letter_H.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="i" src="./images/keyboard/letter_I.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="j" src="./images/keyboard/letter_J.png" class="image-fluid"/>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center p-2 keyboard-container1">
+                        <div class="letter">
+                            <img data-letter="k" src="./images/keyboard/letter_K.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="l" src="./images/keyboard/letter_L.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="m" src="./images/keyboard/letter_M.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="n" src="./images/keyboard/letter_N.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="o" src="./images/keyboard/letter_O.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="p" src="./images/keyboard/letter_P.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="q" src="./images/keyboard/letter_Q.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="r" src="./images/keyboard/letter_R.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="s" src="./images/keyboard/letter_S.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="t" src="./images/keyboard/letter_T.png" class="image-fluid"/>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center p-2 keyboard-container2">
+                        <div class="letter">
+                            <img data-letter="u" src="./images/keyboard/letter_U.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="v" src="./images/keyboard/letter_V.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="w" src="./images/keyboard/letter_W.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="x" src="./images/keyboard/letter_X.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="y" src="./images/keyboard/letter_Y.png" class="image-fluid"/>
+                        </div>
+                        <div class="letter">
+                            <img data-letter="z" src="./images/keyboard/letter_Z.png" class="image-fluid"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="letter">
-          <img
-            data-letter="b"
-            src="./images/keyboard/letter_B.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="c"
-            src="./images/keyboard/letter_C.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="d"
-            src="./images/keyboard/letter_D.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="e"
-            src="./images/keyboard/letter_E.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="f"
-            src="./images/keyboard/letter_F.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="g"
-            src="./images/keyboard/letter_G.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="h"
-            src="./images/keyboard/letter_H.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="i"
-            src="./images/keyboard/letter_I.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="j"
-            src="./images/keyboard/letter_J.png"
-            class="image-fluid"
-          />
-        </div>
-      </div>
-      <div
-        class="d-flex flex-row justify-content-center p-2 keyboard-container1"
-      >
-        <div class="letter">
-          <img
-            data-letter="k"
-            src="./images/keyboard/letter_K.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="l"
-            src="./images/keyboard/letter_L.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="m"
-            src="./images/keyboard/letter_M.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="n"
-            src="./images/keyboard/letter_N.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="o"
-            src="./images/keyboard/letter_O.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="p"
-            src="./images/keyboard/letter_P.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="q"
-            src="./images/keyboard/letter_Q.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="r"
-            src="./images/keyboard/letter_R.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="s"
-            src="./images/keyboard/letter_S.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="t"
-            src="./images/keyboard/letter_T.png"
-            class="image-fluid"
-          />
-        </div>
-      </div>
-      <div
-        class="d-flex flex-row justify-content-center p-2 keyboard-container2"
-      >
-        <div class="letter">
-          <img
-            data-letter="u"
-            src="./images/keyboard/letter_U.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="v"
-            src="./images/keyboard/letter_V.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="w"
-            src="./images/keyboard/letter_W.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="x"
-            src="./images/keyboard/letter_X.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="y"
-            src="./images/keyboard/letter_Y.png"
-            class="image-fluid"
-          />
-        </div>
-        <div class="letter">
-          <img
-            data-letter="z"
-            src="./images/keyboard/letter_Z.png"
-            class="image-fluid"
-          />
-        </div>
-      </div>
-    </div>
-    <script type="module" src="./game.js"></script>
-  </body>
-</html>
+    </body>
+</html></div><script type="module" src="./game.js"></script><script src="./animation.js"></script></body></html>
