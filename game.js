@@ -3,9 +3,8 @@ const questionElement = document.querySelector('#question');
 const answerElement = document.querySelector('#answer');
 const livesElement = document.querySelector('#lives');
 
-const category = 'hightech';
-let livesLeft = 10;
-const solvedLetIndexes = [];
+const LIVES = 10;
+let livesLeft = LIVES;
 
 window.addEventListener('load', async () => {
   const fetchQuestions = async (path) => {
@@ -15,6 +14,11 @@ window.addEventListener('load', async () => {
   };
 
   const getQuestion = (category, data) => {
+    if (!(category in data)) {
+      const keys = Object.keys(data);
+      category = keys[Math.floor(Math.random() * keys.length)];
+    }
+
     const categoryData = data[category];
     const index = Math.floor(Math.random() * categoryData.length);
     return categoryData[index];
@@ -32,11 +36,9 @@ window.addEventListener('load', async () => {
     }
   };
 
-  let index = 1;
   function nextLine() {
-    const line = document.getElementById(`line${index}`);
+    const line = document.getElementById(`line${LIVES - livesLeft}`);
     line.classList.add('draw-line');
-    index++;
   }
 
   const handleLetterClick = (letter) => {
@@ -61,7 +63,12 @@ window.addEventListener('load', async () => {
   );
 
   const data = await fetchQuestions('./data.json');
-  const { question, hint, answer } = getQuestion(category, data);
+
+  // Get the query parameters from the URL
+  const queryParams = new URLSearchParams(window.location.search);
+  let categoryValue = queryParams.get('category');
+
+  const { question, hint, answer } = getQuestion(categoryValue, data);
 
   livesElement.innerText = `Lives: ${livesLeft}`;
   questionElement.innerText = question;
