@@ -2,6 +2,7 @@ const letters = document.querySelectorAll('.image-fluid');
 const questionElement = document.querySelector('#question');
 const answerElement = document.querySelector('#answer');
 const livesElement = document.querySelector('#lives');
+const gameOverElement = document.querySelector('.game-over');
 const audio = new Audio('./soundEffects/chalkdrawing.mp3');
 
 const LIVES = 10;
@@ -52,7 +53,7 @@ window.addEventListener('load', async () => {
 
   const checkGameStatus = (indexes) => {
     if (livesLeft === 0) {
-      console.log('you lost');
+      gameOverElement.innerText = 'You lost';
       disableLettersClick();
     }
 
@@ -60,7 +61,7 @@ window.addEventListener('load', async () => {
       indexes.includes(index) ? 0 : answerArray[index]
     );
     if (answerArray.indexOf(1) === -1) {
-      console.log('you won!');
+      gameOverElement.innerText = 'You won, yay!';
 
       disableLettersClick();
     }
