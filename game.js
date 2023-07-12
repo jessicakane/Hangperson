@@ -2,6 +2,7 @@ const letters = document.querySelectorAll('.image-fluid');
 const questionElement = document.querySelector('#question');
 const answerElement = document.querySelector('#answer');
 const livesElement = document.querySelector('#lives');
+const audio = new Audio('./soundEffects/chalkdrawing.mp3');
 
 const LIVES = 10;
 let livesLeft = LIVES;
@@ -73,6 +74,8 @@ window.addEventListener('load', async () => {
     if (indexes.length === 0) {
       livesLeft--;
       nextLine();
+
+      audio.play();
     }
     letterEl.style.filter = 'brightness(80%)';
 
