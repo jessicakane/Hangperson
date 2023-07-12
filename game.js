@@ -21,6 +21,8 @@ window.addEventListener('load', async () => {
   };
 
   const renderAnswer = (indexes) => {
+    livesElement.innerText = `Lives: ${livesLeft}`;
+
     for (let i = 0; i < answer.length; i++) {
       if (indexes.includes(i)) {
         const letterEl = document.createElement('span');
@@ -31,17 +33,21 @@ window.addEventListener('load', async () => {
   };
 
   const handleLetterClick = (letter) => {
-    if (livesLeft-- === 0) console.log('you lost');
+    if (livesLeft === 0) console.log('you lost');
     const indexes = [...answer.matchAll(new RegExp(letter, 'gi'))].map(
       (a) => a.index
     );
+
+    livesLeft = indexes.length > 0 ? livesLeft : livesLeft - 1;
+
     renderAnswer(indexes);
   };
 
   letters.forEach((letterEl) =>
-    letterEl.addEventListener('click', () =>
-      handleLetterClick(letterEl.dataset.letter)
-    )
+    letterEl.addEventListener('click', () => {
+      handleLetterClick(letterEl.dataset.letter);
+      letterEl.style.filter = 'brightness(80%)';
+    })
   );
 
   const data = await fetchQuestions('./data.json');
