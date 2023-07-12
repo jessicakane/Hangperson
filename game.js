@@ -32,13 +32,22 @@ window.addEventListener('load', async () => {
     }
   };
 
+  function nextLine() {
+    const line = document.getElementById(`line${index}`);
+    line.classList.add('draw-line');
+    index++;
+  }
+
   const handleLetterClick = (letter) => {
     if (livesLeft === 0) console.log('you lost');
     const indexes = [...answer.matchAll(new RegExp(letter, 'gi'))].map(
       (a) => a.index
     );
 
-    livesLeft = indexes.length > 0 ? livesLeft : livesLeft - 1;
+    if (indexes.length === 0) {
+      livesLeft--;
+      nextLine();
+    }
 
     renderAnswer(indexes);
   };
