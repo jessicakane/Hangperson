@@ -10,6 +10,7 @@ const audio = new Audio('./soundEffects/chalkdrawing.mp3');
 const LIVES = 10;
 let livesLeft = LIVES;
 let answerArray = [];
+let game = 'going';
 
 window.addEventListener('load', async () => {
   const fetchQuestions = async (path) => {
@@ -47,6 +48,20 @@ window.addEventListener('load', async () => {
     line.classList.add('draw-line');
   }
 
+  function drawMan() {
+    for (let i=5; i<11; i++) {
+      const line = document.getElementById(`line${i}`);
+      line.classList.add('draw-line');
+    }  
+  }
+
+  function eraseGallow() {
+    for (let i=1; i<5; i++) {
+      const line = document.getElementById(`line${i}`);
+      line.classList.add('invisible-line');
+    }
+  }
+
   const disableLettersClick = () => {
     letters.forEach((letterEl) => {
       const clonedElement = letterEl.cloneNode(true);
@@ -60,16 +75,22 @@ window.addEventListener('load', async () => {
       talkBubble.classList.add('display');
       replayElement.classList.add('display');
       disableLettersClick();
+      game = 'over';
     }
 
     answerArray = answerArray.map((_, index) =>
       indexes.includes(index) ? 0 : answerArray[index]
     );
     if (answerArray.indexOf(1) === -1) {
+      drawMan();
+      eraseGallow();
       gameOverElement.innerText = 'You saved me!';
       gameOverElement.classList.add('green');
       talkBubble.classList.add('display');
+      replayElement.textContent = 'Play again!';
+      replayElement.classList.add('display');
       disableLettersClick();
+      game = 'over';
     }
   };
 
@@ -114,17 +135,42 @@ window.addEventListener('load', async () => {
   answerElement.innerHTML = answerHTML;
 });
 
-const buttons = document.querySelectorAll('.time-btn');
-
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    buttons.forEach((btn) => {
-      btn.classList.remove('active');
-    });
-    button.classList.add('active');
-  });
-});
-
 replayElement.addEventListener('click', function() {
   window.location.href = 'settings.html';
 });
+
+let startTime; 
+let timerElement = document.getElementById("timer");
+let gameTime;
+
+function updateTimer() {
+  let currentTime = new Date().getTime(); 
+  let elapsedTime = currentTime - startTime; 
+  
+  let minutes = Math.floor(elapsedTime / 60000);
+  let seconds = Math.floor((elapsedTime % 60000) / 1000);
+  
+  timerElement.textContent = minutes.toString().padStart(2, "0") + ":" + seconds.toString().padStart(2, "0");
+
+  if (game === 'over') {
+    gameTime = timerElement.textContent;
+    return;
+  } 
+  
+  
+  setTimeout(updateTimer, 1000);
+}
+
+let url = new URL(window.location.href);
+console.log(url);
+let timerParam = url.searchParams.get('timer');
+console.log(timerParam);
+if (timerParam === 'true') {
+  console.log("let's time this game!");
+  window.addEventListener("load", function() {
+    startTime = new Date().getTime();
+    updateTimer();
+});
+}
+
+
