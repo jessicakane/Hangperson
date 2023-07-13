@@ -3,6 +3,7 @@ const questionElement = document.querySelector('#question');
 const answerElement = document.querySelector('#answer');
 const livesElement = document.querySelector('#lives');
 const gameOverElement = document.querySelector('.game-over');
+const talkBubble = document.querySelector('.talk-bubble');
 const audio = new Audio('./soundEffects/chalkdrawing.mp3');
 
 const LIVES = 10;
@@ -54,7 +55,8 @@ window.addEventListener('load', async () => {
 
   const checkGameStatus = (indexes) => {
     if (livesLeft === 0) {
-      gameOverElement.innerText = 'You lost';
+      gameOverElement.innerText = 'Oh no! You killed me :(';
+      talkBubble.classList.add('display');
       disableLettersClick();
     }
 
@@ -62,8 +64,9 @@ window.addEventListener('load', async () => {
       indexes.includes(index) ? 0 : answerArray[index]
     );
     if (answerArray.indexOf(1) === -1) {
-      gameOverElement.innerText = 'You won, yay!';
-
+      gameOverElement.innerText = 'You saved me!';
+      gameOverElement.classList.add('green');
+      talkBubble.classList.add('display');
       disableLettersClick();
     }
   };

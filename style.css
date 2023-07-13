@@ -198,8 +198,8 @@ html
     position: fixed;
     top: 30%;
     left: 23%;
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     font-size: 3.5rem;
     z-index: 1;
     background-image: url(./images/talk_bubble.png);
@@ -207,15 +207,25 @@ html
     background-size: contain;
     border-radius: 20px;
     display: inline-block;
+    visibility: hidden;
+  }
+
+  .display {
+    visibility: visible;
   }
 
   .game-over {
     color: red;
-    font-size: 3.5;
+    font-size: 1.5;
+    width: 60%;
     z-index: 2;
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 7%;
+  }
+
+  .green {
+    color: green;
   }
 
 
