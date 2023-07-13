@@ -10,23 +10,81 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>Hangman</title>
   </head>
   <body>
     <div class="main-container">
       <div class="item1">
-        <div class="left-top"><img class="stats-box" src="./images/stats_box.png" alt="statsbox"></div>
-        <div class="left-bottom">hangman</div>
+        <div class="left-top">
+          <div class="left-top d-flex flex-column stats-container">
+            <div class="stats-title display-4">My Stats</div>
+            <div class="stats d-flex flex-column">
+              <div class="p-4 lead">Games won:</div>
+              <div class="p-4 lead">Best time:</div>
+            </div>
+          </div>
+        </div>
+        <div class="left-bottom d-flex flex-row">
+          <div id="hangman-container p-1">
+            <svg
+              id="hangman-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="300"
+              height="400"
+              viewbox="0 0 300 400"
+            >
+              <!-- SVG elements for the hangman lines -->
+              <line id="line1" x1="10" y1="380" x2="290" y2="380" />
+              <line id="line2" x1="40" y1="380" x2="40" y2="50" />
+              <line id="line3" x1="40" y1="50" x2="200" y2="50" />
+              <line id="line4" x1="200" y1="50" x2="200" y2="100" />
+              <circle id="line5" cx="200" cy="130" r="30" fill="none" />
+              <line id="line6" x1="200" y1="160" x2="200" y2="260" />
+              <line id="line7" x1="200" y1="200" x2="170" y2="240" />
+              <line id="line8" x1="200" y1="200" x2="230" y2="240" />
+              <line id="line9" x1="200" y1="260" x2="170" y2="320" />
+              <line id="line10" x1="200" y1="260" x2="230" y2="320" />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="item2">
-        <div class="right-top"><div class="rt-text">Let's play Hangman!</div></div>
+        <div class="right-top">
+          <div class="rt-text">Let's play Hangman!</div>
+        </div>
         <div class="right-mid">
-          <div class="mid-top"><div class="p2-text">Play with a friend</div></div>
-          <div class="mid-bottom"><div class="p1-text">Play on my own</div></div>
+          <a style="text-decoration:none" href="settings.html">
+            <div class="mid-top">
+              <div class="p2-text">
+                <img
+                  class="double-icon"
+                  src="./images/icons/double_icon.png"
+                  alt=""
+                />
+                Play with a friend
+              </div>
+            </div></a
+          >
+          <a style="text-decoration:none" href="settings.html">
+            <div class="mid-bottom">
+              <div class="p1-text">
+                <img
+                  class="single-icon"
+                  src="./images/icons/single_icon.png"
+                  alt=""
+                />Play on my own
+              </div>
+            </div></a
+          >
         </div>
         <div class="right-bottom"></div>
       </div>
     </div>
   </body>
 </html>
-
