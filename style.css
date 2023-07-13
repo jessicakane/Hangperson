@@ -147,7 +147,8 @@ html
   }
   
   .icon img:hover {
-    filter: brightness(20) invert(0) sepia(2) saturate(150%);
+    filter: brightness(20) invert(0) sepia(2) saturate(0%);
+    transform: scale(1.1);
     transition: filter 0.1s;
     cursor: pointer;
   }
@@ -176,19 +177,21 @@ html
     color: white;
   }
 
-  #timer-button {
+  #timer-yes, #timer-no {
     border: 2px solid white;
+    border-radius: 10px;
   }
 
-  #timer-button:hover {
+  #timer-yes:hover, #timer-no:hover {
+    background-color: #1d5d36;
+    transform: scale(1.05);
+  }
+
+  #timer-yes:active, #timer-no:active  {
     background-color: #1d5d36;
   }
 
-  #timer-button:active {
-    background-color: #1d5d36;
-  }
-
-  #timer-button.active {
+  #timer-yes.active, #timer-no.active {
     background-color: #1d5d36;
   }
 
