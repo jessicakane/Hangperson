@@ -7,7 +7,6 @@ html
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /*border: 1px solid black;*/
   height: 800px;
 }
 
@@ -22,12 +21,9 @@ html
 }
 .left-top{
  flex-basis: 33%;
- /*border: 1px solid red;*/
 }
 .left-bottom{
   flex: 1;
-  /*padding: 10px;*/
-  /*border: 1px solid red;*/
 }
 
 .item2{
@@ -112,15 +108,17 @@ html
   .stats-title {
     border-bottom: 2px solid black;
     border-radius: 10px;
-    flex-basis: 17%;
+    /*flex-basis: 17%;*/
     background-color: rgba(141, 173, 198, 0.5);
-    position: relative;
+    /*position: relative;*/
   }
 
   .stats {
+    height: 70%;
+  }
+
+  #lives, #time, #won, #bestTime {
     flex: 1;
-    position: relative;
-   
   }
 
   .lead {
@@ -136,7 +134,7 @@ html
     top: 0;
     left: 0;
     width: 33%;
-    height: 35%;
+    height: 30%;
   }
 
   .icon img {
@@ -196,7 +194,7 @@ html
 
   .talk-bubble {
     position: fixed;
-    top: 30%;
+    top: 25%;
     left: 23%;
     width: 40%;
     height: 40%;
@@ -208,10 +206,6 @@ html
     border-radius: 20px;
     display: inline-block;
     visibility: hidden;
-  }
-
-  .display {
-    visibility: visible;
   }
 
   .game-over {
@@ -227,7 +221,30 @@ html
   .green {
     color: green;
   }
+  
+  .try-again {
+    background-color: #b6edb6;
+    border: 2px solid green;
+    color: green;
+    position: fixed;
+    z-index: 1;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 1.5rem;
+    top: 58%;
+    left: 32%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+  }
 
+  .try-again:hover {
+    background-color:#8db78d; 
+    transform: scale(1.1);
+  }
+
+  .display {
+    visibility: visible;
+  }
 
   
 
