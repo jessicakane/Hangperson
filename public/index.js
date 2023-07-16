@@ -87,3 +87,10 @@ usernameBtnEL.addEventListener('click', async () => {
 window.onload = async () => {
   if (getCookie('user')) await showUserStats(getCookie('user'));
 };
+
+function displayUserName() {
+  let name = document.getElementById("usernameInput").value;
+  document.getElementById("displayName").textContent = "Hello, " + name + "!";
+  document.getElementById("usernameBtn").style.display = "none";
+  document.getElementById("usernameInput").style.display = "none";
+}
