@@ -7,6 +7,13 @@
     
   }
  
+  #usernameBtn {
+    border-radius: 10px;
+    color: white;
+    background-color: #CA670F;
+    border-color: antiquewhite;
+    
+  }
   
   .main-container{
     font-family: 'Indie Flower', cursive;

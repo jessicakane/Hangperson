@@ -7,27 +7,59 @@ const talkBubble = document.querySelector('.talk-bubble');
 const replayElement = document.querySelector('.try-again');
 const audio = new Audio('./soundEffects/chalkdrawing.mp3');
 
+const SERVER_URL = 'http://localhost:3000';
 const LIVES = 10;
+const GAME = {
+  WON: 'won',
+  LOST: 'lost',
+};
+const COOKIE_EXP_DAYS = 2;
 let livesLeft = LIVES;
 let answerArray = [];
 let game = 'going';
+let elapsedTime;
+
+function cookieStringToObject(str) {
+  return JSON.parse(decodeURIComponent(str));
+}
+// Function to get the value of a cookie by name
+function getCookie(name) {
+  const cookieString = document.cookie;
+  const cookies = cookieString.split(';');
+
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+
+    // Check if the cookie starts with the given name
+    if (cookie.startsWith(name + '=')) {
+      const cookieValue = cookie.substring(name.length + 1);
+      return cookieStringToObject(cookieValue);
+    }
+  }
+
+  return null; // Cookie not found
+}
+
+// Function to set a cookie with an object value
+function setCookie(name, value, expirationDays) {
+  const expires = new Date();
+  expires.setDate(expires.getDate() + expirationDays);
+
+  document.cookie = `${name}=${value}; expires=${expires.toUTCString()}; path=/`;
+}
 
 window.addEventListener('load', async () => {
-  const fetchQuestions = async (path) => {
-    const res = await fetch(path);
+  const getQuestionDB = async (category) => {
+    questionElement.innerText = 'Loading...';
+    let res;
+    if (category && category !== 'surprise')
+      res = await fetch(`${SERVER_URL}/questions/${category}/random`);
+    else res = await fetch(`${SERVER_URL}/questions/random`);
+
     const data = await res.json();
+    questionElement.innerText = '';
+
     return data;
-  };
-
-  const getQuestion = (category, data) => {
-    if (!(category in data)) {
-      const keys = Object.keys(data);
-      category = keys[Math.floor(Math.random() * keys.length)];
-    }
-
-    const categoryData = data[category];
-    const index = Math.floor(Math.random() * categoryData.length);
-    return categoryData[index];
   };
 
   const renderAnswer = (indexes) => {
@@ -49,14 +81,14 @@ window.addEventListener('load', async () => {
   }
 
   function drawMan() {
-    for (let i=5; i<11; i++) {
+    for (let i = 5; i < 11; i++) {
       const line = document.getElementById(`line${i}`);
       line.classList.add('draw-line');
-    }  
+    }
   }
 
   function eraseGallow() {
-    for (let i=1; i<5; i++) {
+    for (let i = 1; i < 5; i++) {
       const line = document.getElementById(`line${i}`);
       line.classList.add('invisible-line');
     }
@@ -69,6 +101,49 @@ window.addEventListener('load', async () => {
     });
   };
 
+  const gameLost = async () => {
+    userObj.gamesPlayed += 1;
+    setCookie('user', JSON.stringify(userObj), COOKIE_EXP_DAYS);
+
+    await fetch(`${SERVER_URL}/users/${userObj._id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...userObj }),
+    });
+  };
+
+  const gameWon = async () => {
+    userObj.gamesPlayed += 1;
+    userObj.gamesWon += 1;
+    console.log(+userObj.time > elapsedTime);
+    if (!userObj.time || +userObj.time > elapsedTime)
+      userObj.time = elapsedTime;
+
+    setCookie('user', JSON.stringify(userObj), COOKIE_EXP_DAYS);
+
+    await fetch(`${SERVER_URL}/users/${userObj._id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...userObj }),
+    });
+  };
+
+  async function updateUserStats(gameStatus) {
+    try {
+      if (gameStatus === GAME.LOST) {
+        await gameLost();
+      } else {
+        await gameWon();
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   const checkGameStatus = (indexes) => {
     if (livesLeft === 0) {
       gameOverElement.innerText = 'Oh no! You killed me :(';
@@ -76,6 +151,7 @@ window.addEventListener('load', async () => {
       replayElement.classList.add('display');
       disableLettersClick();
       game = 'over';
+      updateUserStats(GAME.LOST);
     }
 
     answerArray = answerArray.map((_, index) =>
@@ -91,6 +167,7 @@ window.addEventListener('load', async () => {
       replayElement.classList.add('display');
       disableLettersClick();
       game = 'over';
+      updateUserStats(GAME.WON);
     }
   };
 
@@ -117,13 +194,13 @@ window.addEventListener('load', async () => {
     })
   );
 
-  const data = await fetchQuestions('./data.json');
-
   // Get the query parameters from the URL
   const queryParams = new URLSearchParams(window.location.search);
   let categoryValue = queryParams.get('category');
 
-  const { question, hint, answer } = getQuestion(categoryValue, data);
+  const userObj = getCookie('user');
+
+  const { question, hint, answer } = await getQuestionDB(categoryValue);
   answerArray = Array(answer.length).fill(1);
 
   livesElement.innerText = `Lives: ${livesLeft}`;
@@ -135,29 +212,31 @@ window.addEventListener('load', async () => {
   answerElement.innerHTML = answerHTML;
 });
 
-replayElement.addEventListener('click', function() {
+replayElement.addEventListener('click', function () {
   window.location.href = 'settings.html';
 });
 
-let startTime; 
-let timerElement = document.getElementById("timer");
+let startTime;
+let timerElement = document.getElementById('timer');
 let gameTime;
 
 function updateTimer() {
-  let currentTime = new Date().getTime(); 
-  let elapsedTime = currentTime - startTime; 
-  
+  let currentTime = new Date().getTime();
+  elapsedTime = currentTime - startTime;
+
   let minutes = Math.floor(elapsedTime / 60000);
   let seconds = Math.floor((elapsedTime % 60000) / 1000);
-  
-  timerElement.textContent = minutes.toString().padStart(2, "0") + ":" + seconds.toString().padStart(2, "0");
+
+  timerElement.textContent =
+    minutes.toString().padStart(2, '0') +
+    ':' +
+    seconds.toString().padStart(2, '0');
 
   if (game === 'over') {
     gameTime = timerElement.textContent;
     return;
-  } 
-  
-  
+  }
+
   setTimeout(updateTimer, 1000);
 }
 
@@ -167,10 +246,8 @@ let timerParam = url.searchParams.get('timer');
 console.log(timerParam);
 if (timerParam === 'true') {
   console.log("let's time this game!");
-  window.addEventListener("load", function() {
+  window.addEventListener('load', function () {
     startTime = new Date().getTime();
     updateTimer();
-});
+  });
 }
-
-
