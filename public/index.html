@@ -25,8 +25,8 @@
           <div class="left-top d-flex flex-column stats-container">
             <div class="stats-title display-4">My Stats</div>
             <div class="stats d-flex flex-column">
-              <div class="p-4 lead">Games won:</div>
-              <div class="p-4 lead">Best time:</div>
+              <div class="p-4 lead games-ratio">Games won:</div>
+              <div class="p-4 lead best-time">Best time:</div>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
           <div class="rt-text">Let's play Hangman!</div>
         </div>
         <div class="right-mid">
-          <a style="text-decoration:none" href="settings.html">
+          <a style="text-decoration: none" href="settings.html">
             <div class="mid-top">
               <div class="p2-text">
                 <img
@@ -71,7 +71,7 @@
               </div>
             </div></a
           >
-          <a style="text-decoration:none" href="settings.html">
+          <a style="text-decoration: none" href="settings.html">
             <div class="mid-bottom">
               <div class="p1-text">
                 <img
@@ -82,9 +82,17 @@
               </div>
             </div></a
           >
+          <input
+            class="mt-2"
+            id="usernameInput"
+            type="text"
+            placeholder="Enter your name..."
+          />
+          <button class="btn btn-info" id="usernameBtn">Save</button>
         </div>
         <div class="right-bottom"></div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

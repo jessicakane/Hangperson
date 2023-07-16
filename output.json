@@ -1,0 +1,1070 @@
+[
+  {
+    "question": "The programming language known for its use in web development and creating dynamic web pages is?",
+    "hint": "Starts with 'J'",
+    "answer": "JavaScript",
+    "category": "hightech"
+  },
+  {
+    "question": "The process of finding and fixing errors in software is called?",
+    "hint": "Starts with 'D'",
+    "answer": "Debugging",
+    "category": "hightech"
+  },
+  {
+    "question": "The markup language used for structuring content on the web is?",
+    "hint": "Abbreviation: 'H.T.'",
+    "answer": "HTML",
+    "category": "hightech"
+  },
+  {
+    "question": "The language used for creating and manipulating databases is?",
+    "hint": "Abbreviation: 'S.Q.L.'",
+    "answer": "SQL",
+    "category": "hightech"
+  },
+  {
+    "question": "The high-level programming language developed by Microsoft is?",
+    "hint": "Starts with 'C', ends with '#'",
+    "answer": "CSharp",
+    "category": "hightech"
+  },
+  {
+    "question": "The version control system popular among developers is?",
+    "hint": "Starts with 'G'",
+    "answer": "Git",
+    "category": "hightech"
+  },
+  {
+    "question": "The style sheet language used for designing web pages is?",
+    "hint": "Abbreviation: 'C.S.S.'",
+    "answer": "CSS",
+    "category": "hightech"
+  },
+  {
+    "question": "The programming language used for creating mobile applications is?",
+    "hint": "Starts with 'J'",
+    "answer": "Java",
+    "category": "hightech"
+  },
+  {
+    "question": "The cloud computing platform provided by Amazon is called?",
+    "hint": "Abbreviation: 'A.W.S.'",
+    "answer": "AWS",
+    "category": "hightech"
+  },
+  {
+    "question": "The object-oriented programming language used for developing iOS applications is?",
+    "hint": "Starts with 'S'",
+    "answer": "Swift",
+    "category": "hightech"
+  },
+  {
+    "question": "The programming language used for creating dynamic web pages and server-side scripting is?",
+    "hint": "Abbreviation: 'P.H.P.'",
+    "answer": "PHP",
+    "category": "hightech"
+  },
+  {
+    "question": "The lightweight JavaScript library for DOM manipulation is?",
+    "hint": "Abbreviation: 'j.Q.'",
+    "answer": "jQuery",
+    "category": "hightech"
+  },
+  {
+    "question": "The widely-used relational database management system is?",
+    "hint": "Abbreviation: 'M.S.S.'",
+    "answer": "MySQL",
+    "category": "hightech"
+  },
+  {
+    "question": "The programming language used for building Android applications is?",
+    "hint": "Starts with 'J'",
+    "answer": "Java",
+    "category": "hightech"
+  },
+  {
+    "question": "The cloud computing platform provided by Google is called?",
+    "hint": "Abbreviation: 'G.C.P.'",
+    "answer": "GCP",
+    "category": "hightech"
+  },
+  {
+    "question": "The server-side JavaScript runtime environment is?",
+    "hint": "Abbreviation: 'N.J.S.'",
+    "answer": "Node",
+    "category": "hightech"
+  },
+  {
+    "question": "The widely-used web browser developed by Mozilla is called?",
+    "hint": "Starts with 'F'",
+    "answer": "Firefox",
+    "category": "hightech"
+  },
+  {
+    "question": "The programming language used for creating desktop applications is?",
+    "hint": "Starts with 'C'",
+    "answer": "CSharp",
+    "category": "hightech"
+  },
+  {
+    "question": "The lightweight web framework for building server-side applications is?",
+    "hint": "Abbreviation: 'F.L.'",
+    "answer": "Flask",
+    "category": "hightech"
+  },
+  {
+    "question": "The cloud computing platform provided by Microsoft is called?",
+    "hint": "Abbreviation: 'A.'",
+    "answer": "Azure",
+    "category": "hightech"
+  },
+  {
+    "question": "The programming language used for machine learning and data analysis is?",
+    "hint": "Abbreviation: 'P.Y.'",
+    "answer": "Python",
+    "category": "hightech"
+  },
+  {
+    "question": "The widely-used front-end framework developed by Facebook is called?",
+    "hint": "Abbreviation: 'R.'",
+    "answer": "React",
+    "category": "hightech"
+  },
+  {
+    "question": "The widely-used text editor known for its extensibility is?",
+    "hint": "Abbreviation: 'V.S.C.'",
+    "answer": "VSCode",
+    "category": "hightech"
+  },
+  {
+    "question": "The scripting language used for web scraping and automation is?",
+    "hint": "Abbreviation: 'P.'",
+    "answer": "Python",
+    "category": "hightech"
+  },
+  {
+    "question": "The programming language known for its use in data science and statistical computing is?",
+    "hint": "Abbreviation: 'R.'",
+    "answer": "R",
+    "category": "hightech"
+  },
+  {
+    "question": "The musical instrument known for its large size and deep sound is?",
+    "hint": "Starts with 'P'",
+    "answer": "Piano",
+    "category": "music"
+  },
+  {
+    "question": "The musical genre known for its fast-paced rhythms and energetic beats is?",
+    "hint": "Abbreviation: 'R.'",
+    "answer": "Rock",
+    "category": "music"
+  },
+  {
+    "question": "The electronic musical instrument popularized by synthesizer players is?",
+    "hint": "Abbreviation: 'K.'",
+    "answer": "Keyboard",
+    "category": "music"
+  },
+  {
+    "question": "The small-sized string instrument often associated with Hawaiian music is?",
+    "hint": "Abbreviation: 'U.'",
+    "answer": "Ukulele",
+    "category": "music"
+  },
+  {
+    "question": "The musical genre known for its improvisation and syncopated rhythms is?",
+    "hint": "Abbreviation: 'J.'",
+    "answer": "Jazz",
+    "category": "music"
+  },
+  {
+    "question": "The woodwind instrument known for its smooth and mellow sound is?",
+    "hint": "Starts with 'S'",
+    "answer": "Saxophone",
+    "category": "music"
+  },
+  {
+    "question": "The musical instrument that is struck with mallets to produce sound is?",
+    "hint": "Starts with 'D'",
+    "answer": "Drums",
+    "category": "music"
+  },
+  {
+    "question": "The vocal technique of producing two pitches simultaneously is called?",
+    "hint": "Starts with 'B'",
+    "answer": "Beatboxing",
+    "category": "music"
+  },
+  {
+    "question": "The musical genre characterized by its repetitive beats and electronic instrumentation is?",
+    "hint": "Abbreviation: 'T.'",
+    "answer": "Techno",
+    "category": "music"
+  },
+  {
+    "question": "The brass instrument known for its bright and powerful sound is?",
+    "hint": "Starts with 'T'",
+    "answer": "Trumpet",
+    "category": "music"
+  },
+  {
+    "question": "The musical genre that originated in Jamaica and features offbeat rhythms is?",
+    "hint": "Abbreviation: 'R.'",
+    "answer": "Reggae",
+    "category": "music"
+  },
+  {
+    "question": "The percussion instrument consisting of a set of wooden bars is?",
+    "hint": "Starts with 'X'",
+    "answer": "Xylophone",
+    "category": "music"
+  },
+  {
+    "question": "The musical style known for its emotional expression and storytelling is?",
+    "hint": "Starts with 'B'",
+    "answer": "Blues",
+    "category": "music"
+  },
+  {
+    "question": "The bowed string instrument with four strings and a warm tone is?",
+    "hint": "Starts with 'V'",
+    "answer": "Violin",
+    "category": "music"
+  },
+  {
+    "question": "The musical genre characterized by its fast tempo and complex guitar playing is?",
+    "hint": "Abbreviation: 'M.'",
+    "answer": "Metal",
+    "category": "music"
+  },
+  {
+    "question": "The percussion instrument consisting of a series of metal plates is?",
+    "hint": "Abbreviation: 'C.'",
+    "answer": "Cymbals",
+    "category": "music"
+  },
+  {
+    "question": "The musical style characterized by its upbeat tempo and catchy melodies is?",
+    "hint": "Abbreviation: 'P.'",
+    "answer": "Pop",
+    "category": "music"
+  },
+  {
+    "question": "The electronic musical instrument known for its ability to create a wide range of sounds is?",
+    "hint": "Abbreviation: 'S.'",
+    "answer": "Synthesizer",
+    "category": "music"
+  },
+  {
+    "question": "The vocal technique of singing without the use of words is called?",
+    "hint": "Starts with 'S'",
+    "answer": "Scatting",
+    "category": "music"
+  },
+  {
+    "question": "The musical genre that blends elements of hip-hop and R&B is?",
+    "hint": "Starts with 'T'",
+    "answer": "Trap",
+    "category": "music"
+  },
+  {
+    "question": "The wind instrument known for its distinctive sound and use in marching bands is?",
+    "hint": "Starts with 'T'",
+    "answer": "Trombone",
+    "category": "music"
+  },
+  {
+    "question": "The musical genre characterized by its high energy, fast tempo, and aggressive vocals is?",
+    "hint": "Starts with 'P'",
+    "answer": "Punk",
+    "category": "music"
+  },
+  {
+    "question": "The string instrument known for its deep sound and large size is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cello",
+    "category": "music"
+  },
+  {
+    "question": "The percussion instrument played by shaking or striking is?",
+    "hint": "Starts with 'M'",
+    "answer": "Maracas",
+    "category": "music"
+  },
+  {
+    "question": "The capital city of France is?",
+    "hint": "Starts with 'P'",
+    "answer": "Paris",
+    "category": "cities"
+  },
+  {
+    "question": "The largest city in Brazil is?",
+    "hint": "Starts with 'S'",
+    "answer": "SaoPaulo",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Japan is?",
+    "hint": "Starts with 'T'",
+    "answer": "Tokyo",
+    "category": "cities"
+  },
+  {
+    "question": "The city famous for its canals and gondolas is?",
+    "hint": "Starts with 'V'",
+    "answer": "Venice",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of India is?",
+    "hint": "Starts with 'N'",
+    "answer": "NewDelhi",
+    "category": "cities"
+  },
+  {
+    "question": "The largest city in Australia is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sydney",
+    "category": "cities"
+  },
+  {
+    "question": "The city known for its historical ruins and colosseum is?",
+    "hint": "Starts with 'R'",
+    "answer": "Rome",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Russia is?",
+    "hint": "Starts with 'M'",
+    "answer": "Moscow",
+    "category": "cities"
+  },
+  {
+    "question": "The city famous for its carnival celebration is?",
+    "hint": "Starts with 'R'",
+    "answer": "RioDeJaneiro",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of South Korea is?",
+    "hint": "Starts with 'S'",
+    "answer": "Seoul",
+    "category": "cities"
+  },
+  {
+    "question": "The city known for its skyscrapers and financial district is?",
+    "hint": "Starts with 'N'",
+    "answer": "NewYork",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of United Arab Emirates is?",
+    "hint": "Starts with 'A'",
+    "answer": "AbuDhabi",
+    "category": "cities"
+  },
+  {
+    "question": "The city famous for its red telephone booths and double-decker buses is?",
+    "hint": "Starts with 'L'",
+    "answer": "London",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Egypt is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cairo",
+    "category": "cities"
+  },
+  {
+    "question": "The city known for its iconic Golden Gate Bridge is?",
+    "hint": "Starts with 'S'",
+    "answer": "SanFrancisco",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Canada is?",
+    "hint": "Starts with 'O'",
+    "answer": "Ottawa",
+    "category": "cities"
+  },
+  {
+    "question": "The city famous for its tulip fields and canals is?",
+    "hint": "Starts with 'A'",
+    "answer": "Amsterdam",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Argentina is?",
+    "hint": "Starts with 'B'",
+    "answer": "BuenosAires",
+    "category": "cities"
+  },
+  {
+    "question": "The city known for its famous statue of Christ the Redeemer is?",
+    "hint": "Starts with 'R'",
+    "answer": "RioDeJaneiro",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Spain is?",
+    "hint": "Starts with 'M'",
+    "answer": "Madrid",
+    "category": "cities"
+  },
+  {
+    "question": "The city famous for its opera house and harbor is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sydney",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of China is?",
+    "hint": "Starts with 'B'",
+    "answer": "Beijing",
+    "category": "cities"
+  },
+  {
+    "question": "The city known for its historical significance and famous wall is?",
+    "hint": "Starts with 'R'",
+    "answer": "Rome",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Germany is?",
+    "hint": "Starts with 'B'",
+    "answer": "Berlin",
+    "category": "cities"
+  },
+  {
+    "question": "The city famous for its opera and classical music is?",
+    "hint": "Starts with 'V'",
+    "answer": "Vienna",
+    "category": "cities"
+  },
+  {
+    "question": "The capital city of Mexico is?",
+    "hint": "Starts with 'M'",
+    "answer": "MexicoCity",
+    "category": "cities"
+  },
+  {
+    "question": "The German luxury car brand known for its iconic three-pointed star logo is?",
+    "hint": "Starts with 'M'",
+    "answer": "Mercedes",
+    "category": "cars"
+  },
+  {
+    "question": "The Italian luxury sports car manufacturer known for its prancing horse logo is?",
+    "hint": "Starts with 'F'",
+    "answer": "Ferrari",
+    "category": "cars"
+  },
+  {
+    "question": "The Japanese automaker known for its fuel-efficient hybrid vehicles is?",
+    "hint": "Starts with 'T'",
+    "answer": "Toyota",
+    "category": "cars"
+  },
+  {
+    "question": "The American electric car manufacturer known for its Model S and Model 3 is?",
+    "hint": "Starts with 'T'",
+    "answer": "Tesla",
+    "category": "cars"
+  },
+  {
+    "question": "The German automaker known for its 'ultimate driving machines' is?",
+    "hint": "Starts with 'B'",
+    "answer": "BMW",
+    "category": "cars"
+  },
+  {
+    "question": "The American luxury car brand known for its distinctive grille design is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cadillac",
+    "category": "cars"
+  },
+  {
+    "question": "The Italian luxury car manufacturer known for its stylish and powerful cars is?",
+    "hint": "Starts with 'L'",
+    "answer": "Lamborghini",
+    "category": "cars"
+  },
+  {
+    "question": "The Japanese automaker known for its compact and fuel-efficient cars is?",
+    "hint": "Starts with 'H'",
+    "answer": "Honda",
+    "category": "cars"
+  },
+  {
+    "question": "The German automaker known for its sporty and performance-oriented cars is?",
+    "hint": "Starts with 'A'",
+    "answer": "Audi",
+    "category": "cars"
+  },
+  {
+    "question": "The American automaker known for its iconic Mustang and F-150 is?",
+    "hint": "Starts with 'F'",
+    "answer": "Ford",
+    "category": "cars"
+  },
+  {
+    "question": "The Swedish automaker known for its emphasis on safety is?",
+    "hint": "Starts with 'V'",
+    "answer": "Volvo",
+    "category": "cars"
+  },
+  {
+    "question": "The German luxury car brand known for its sporty and elegant designs is?",
+    "hint": "Starts with 'P'",
+    "answer": "Porsche",
+    "category": "cars"
+  },
+  {
+    "question": "The Japanese automaker known for its reliable and affordable cars is?",
+    "hint": "Starts with 'N'",
+    "answer": "Nissan",
+    "category": "cars"
+  },
+  {
+    "question": "The American automaker known for its off-road vehicles and Wrangler is?",
+    "hint": "Starts with 'J'",
+    "answer": "Jeep",
+    "category": "cars"
+  },
+  {
+    "question": "The British luxury car manufacturer known for its elegant and handcrafted cars is?",
+    "hint": "Starts with 'R'",
+    "answer": "RollsRoyce",
+    "category": "cars"
+  },
+  {
+    "question": "The German automaker known for its compact and stylish cars is?",
+    "hint": "Starts with 'V'",
+    "answer": "Volkswagen",
+    "category": "cars"
+  },
+  {
+    "question": "The Italian automaker known for its small and colorful cars is?",
+    "hint": "Starts with 'F'",
+    "answer": "Fiat",
+    "category": "cars"
+  },
+  {
+    "question": "The American automaker known for its pickup trucks and commercial vehicles is?",
+    "hint": "Starts with 'G'",
+    "answer": "GeneralMotors",
+    "category": "cars"
+  },
+  {
+    "question": "The Japanese automaker known for its luxury vehicles and Infiniti brand is?",
+    "hint": "Starts with 'L'",
+    "answer": "Lexus",
+    "category": "cars"
+  },
+  {
+    "question": "The German luxury car brand known for its performance-oriented AMG models is?",
+    "hint": "Starts with 'M'",
+    "answer": "Mercedes",
+    "category": "cars"
+  },
+  {
+    "question": "The American automaker known for its muscle cars and Challenger is?",
+    "hint": "Starts with 'D'",
+    "answer": "Dodge",
+    "category": "cars"
+  },
+  {
+    "question": "The British automaker known for its luxury sports cars is?",
+    "hint": "Starts with 'A'",
+    "answer": "AstonMartin",
+    "category": "cars"
+  },
+  {
+    "question": "The Japanese automaker known for its all-wheel drive technology and Outback model is?",
+    "hint": "Starts with 'S'",
+    "answer": "Subaru",
+    "category": "cars"
+  },
+  {
+    "question": "The Italian automaker known for its compact and affordable cars is?",
+    "hint": "Starts with 'A'",
+    "answer": "AlfaRomeo",
+    "category": "cars"
+  },
+  {
+    "question": "The American automaker known for its luxury electric vehicles and Escalade is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cadillac",
+    "category": "cars"
+  },
+  {
+    "question": "The German automaker known for its innovative and environmentally-friendly cars is?",
+    "hint": "Starts with 'V'",
+    "answer": "Volkswagen",
+    "category": "cars"
+  },
+  {
+    "question": "A round, dough-based baked bread product often topped with cheese and tomato sauce is?",
+    "hint": "Starts with 'P'",
+    "answer": "Pizza",
+    "category": "food"
+  },
+  {
+    "question": "A small, round fruit with a thin outer layer and juicy interior is?",
+    "hint": "Starts with 'A'",
+    "answer": "Apple",
+    "category": "food"
+  },
+  {
+    "question": "A sweet, frozen dessert made from milk or cream and flavored with various ingredients is?",
+    "hint": "Starts with 'I'",
+    "answer": "IceCream",
+    "category": "food"
+  },
+  {
+    "question": "A popular Mexican dish consisting of a folded tortilla filled with various ingredients is?",
+    "hint": "Starts with 'T'",
+    "answer": "Taco",
+    "category": "food"
+  },
+  {
+    "question": "A long, cylindrical meat product made from ground beef or pork is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sausage",
+    "category": "food"
+  },
+  {
+    "question": "A hot, brewed beverage made from roasted coffee beans is?",
+    "hint": "Starts with 'C'",
+    "answer": "Coffee",
+    "category": "food"
+  },
+  {
+    "question": "A round, fried doughnut-like dessert often covered in powdered sugar is?",
+    "hint": "Starts with 'B'",
+    "answer": "Beignet",
+    "category": "food"
+  },
+  {
+    "question": "A type of pasta shaped like tubes or cylinders is?",
+    "hint": "Starts with 'P'",
+    "answer": "Penne",
+    "category": "food"
+  },
+  {
+    "question": "A traditional Japanese dish consisting of vinegared rice and various toppings is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sushi",
+    "category": "food"
+  },
+  {
+    "question": "A popular sandwich made with two slices of bread and various fillings is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sandwich",
+    "category": "food"
+  },
+  {
+    "question": "A type of Italian pasta shaped like small ears is?",
+    "hint": "Starts with 'O'",
+    "answer": "Orecchiette",
+    "category": "food"
+  },
+  {
+    "question": "A small, round citrus fruit with a sour taste is?",
+    "hint": "Starts with 'L'",
+    "answer": "Lemon",
+    "category": "food"
+  },
+  {
+    "question": "A type of bread product made from a dough of flour, water, and yeast is?",
+    "hint": "Starts with 'B'",
+    "answer": "Bread",
+    "category": "food"
+  },
+  {
+    "question": "A round, sweet dessert made from flour, sugar, and eggs is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cake",
+    "category": "food"
+  },
+  {
+    "question": "A type of fast food made from ground meat, often served on a bun is?",
+    "hint": "Starts with 'B'",
+    "answer": "Burger",
+    "category": "food"
+  },
+  {
+    "question": "A popular Italian dish consisting of thin, flat pasta strips is?",
+    "hint": "Starts with 'L'",
+    "answer": "Lasagna",
+    "category": "food"
+  },
+  {
+    "question": "A creamy, fermented dairy product often used in desserts and sauces is?",
+    "hint": "Starts with 'Y'",
+    "answer": "Yogurt",
+    "category": "food"
+  },
+  {
+    "question": "A thick, savory soup made from pureed vegetables is?",
+    "hint": "Starts with 'S'",
+    "answer": "Soup",
+    "category": "food"
+  },
+  {
+    "question": "A green, leafy vegetable often used in salads is?",
+    "hint": "Starts with 'L'",
+    "answer": "Lettuce",
+    "category": "food"
+  },
+  {
+    "question": "A type of Italian bread often flavored with garlic and herbs is?",
+    "hint": "Starts with 'C'",
+    "answer": "Ciabatta",
+    "category": "food"
+  },
+  {
+    "question": "A sweet, baked dessert made from flour, sugar, and eggs is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cookie",
+    "category": "food"
+  },
+  {
+    "question": "A hot, spiced beverage made from tea, milk, and various spices is?",
+    "hint": "Starts with 'C'",
+    "answer": "Chai",
+    "category": "food"
+  },
+  {
+    "question": "A soft, flat bread often used to wrap various fillings is?",
+    "hint": "Starts with 'T'",
+    "answer": "Tortilla",
+    "category": "food"
+  },
+  {
+    "question": "A popular Italian dish consisting of thin, round dough topped with cheese and various ingredients is?",
+    "hint": "Starts with 'P'",
+    "answer": "Pizza",
+    "category": "food"
+  },
+  {
+    "question": "A creamy, frozen dessert made from milk, sugar, and flavors is?",
+    "hint": "Starts with 'G'",
+    "answer": "Gelato",
+    "category": "food"
+  },
+  {
+    "question": "A long, tubular pasta often used in baked dishes is?",
+    "hint": "Starts with 'Z'",
+    "answer": "Ziti",
+    "category": "food"
+  },
+  {
+    "question": "The largest land animal known for its long trunk and tusks is?",
+    "hint": "Starts with 'E'",
+    "answer": "Elephant",
+    "category": "animals"
+  },
+  {
+    "question": "A small domesticated animal often kept as a pet and known for its purring is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cat",
+    "category": "animals"
+  },
+  {
+    "question": "A large, strong mammal known for its distinctive black and white fur is?",
+    "hint": "Starts with 'P'",
+    "answer": "Panda",
+    "category": "animals"
+  },
+  {
+    "question": "A winged creature known for its ability to fly and build nests is?",
+    "hint": "Starts with 'B'",
+    "answer": "Bird",
+    "category": "animals"
+  },
+  {
+    "question": "A marine animal known for its intelligence and communication skills is?",
+    "hint": "Starts with 'D'",
+    "answer": "Dolphin",
+    "category": "animals"
+  },
+  {
+    "question": "A small, furry animal often kept as a pet and known for storing nuts is?",
+    "hint": "Starts with 'S'",
+    "answer": "Squirrel",
+    "category": "animals"
+  },
+  {
+    "question": "A large, striped cat known for its strength and hunting abilities is?",
+    "hint": "Starts with 'T'",
+    "answer": "Tiger",
+    "category": "animals"
+  },
+  {
+    "question": "A marine animal known for its long neck and ability to swim is?",
+    "hint": "Starts with 'G'",
+    "answer": "Giraffe",
+    "category": "animals"
+  },
+  {
+    "question": "A small, venomous reptile often associated with desert environments is?",
+    "hint": "Starts with 'S'",
+    "answer": "Snake",
+    "category": "animals"
+  },
+  {
+    "question": "A large, aquatic mammal known for its playful behavior and intelligence is?",
+    "hint": "Starts with 'D'",
+    "answer": "Dolphin",
+    "category": "animals"
+  },
+  {
+    "question": "A furry animal known for its sharp claws and ability to climb trees is?",
+    "hint": "Starts with 'B'",
+    "answer": "Bear",
+    "category": "animals"
+  },
+  {
+    "question": "A bird known for its ability to mimic sounds and human speech is?",
+    "hint": "Starts with 'P'",
+    "answer": "Parrot",
+    "category": "animals"
+  },
+  {
+    "question": "A large, flightless bird known for its strong legs and powerful kick is?",
+    "hint": "Starts with 'O'",
+    "answer": "Ostrich",
+    "category": "animals"
+  },
+  {
+    "question": "A marine mammal known for its playful nature and distinctive black and white markings is?",
+    "hint": "Starts with 'O'",
+    "answer": "Orca",
+    "category": "animals"
+  },
+  {
+    "question": "A small, fast-moving insect known for its ability to jump long distances is?",
+    "hint": "Starts with 'G'",
+    "answer": "Grasshopper",
+    "category": "animals"
+  },
+  {
+    "question": "A large, predatory aquatic animal known for its sharp teeth and powerful jaws is?",
+    "hint": "Starts with 'S'",
+    "answer": "Shark",
+    "category": "animals"
+  },
+  {
+    "question": "A small, colorful bird known for its ability to hover in mid-air is?",
+    "hint": "Starts with 'H'",
+    "answer": "Hummingbird",
+    "category": "animals"
+  },
+  {
+    "question": "A furry mammal known for its ability to roll into a protective ball is?",
+    "hint": "Starts with 'H'",
+    "answer": "Hedgehog",
+    "category": "animals"
+  },
+  {
+    "question": "A large, herbivorous mammal known for its long neck and spots is?",
+    "hint": "Starts with 'G'",
+    "answer": "Giraffe",
+    "category": "animals"
+  },
+  {
+    "question": "A small, long-tailed mammal known for its ability to glide through the air is?",
+    "hint": "Starts with 'S'",
+    "answer": "Squirrel",
+    "category": "animals"
+  },
+  {
+    "question": "A marine animal known for its eight tentacles and ability to squirt ink is?",
+    "hint": "Starts with 'O'",
+    "answer": "Octopus",
+    "category": "animals"
+  },
+  {
+    "question": "A large, slow-moving mammal known for its long tongue and leaf-eating diet is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sloth",
+    "category": "animals"
+  },
+  {
+    "question": "A small, nocturnal mammal known for its ability to fly is?",
+    "hint": "Starts with 'B'",
+    "answer": "Bat",
+    "category": "animals"
+  },
+  {
+    "question": "A large, wild feline known for its strength and distinctive roar is?",
+    "hint": "Starts with 'L'",
+    "answer": "Lion",
+    "category": "animals"
+  },
+  {
+    "question": "A marine animal known for its shell and slow movement is?",
+    "hint": "Starts with 'T'",
+    "answer": "Turtle",
+    "category": "animals"
+  },
+  {
+    "question": "A small, venomous arachnid with eight legs and two body segments is?",
+    "hint": "Starts with 'S'",
+    "answer": "Spider",
+    "category": "animals"
+  },
+  {
+    "question": "A type of footwear that covers the foot and ankle is?",
+    "hint": "Starts with 'S'",
+    "answer": "Shoe",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the upper body is?",
+    "hint": "Starts with 'S'",
+    "answer": "Shirt",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the lower body is?",
+    "hint": "Starts with 'P'",
+    "answer": "Pants",
+    "category": "clothes"
+  },
+  {
+    "question": "A piece of clothing worn around the neck is?",
+    "hint": "Starts with 'S'",
+    "answer": "Scarf",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the head to protect from the sun is?",
+    "hint": "Starts with 'H'",
+    "answer": "Hat",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the hands to keep them warm is?",
+    "hint": "Starts with 'G'",
+    "answer": "Gloves",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the feet for warmth and comfort is?",
+    "hint": "Starts with 'S'",
+    "answer": "Socks",
+    "category": "clothes"
+  },
+  {
+    "question": "A piece of clothing worn around the waist to hold up pants is?",
+    "hint": "Starts with 'B'",
+    "answer": "Belt",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn over other clothes to keep warm is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sweater",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn to cover the legs is?",
+    "hint": "Starts with 'S'",
+    "answer": "Skirt",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn by women that covers the torso is?",
+    "hint": "Starts with 'B'",
+    "answer": "Blouse",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn to protect the body from the rain is?",
+    "hint": "Starts with 'C'",
+    "answer": "Coat",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the feet for sports or physical activities is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sneakers",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn for swimming is?",
+    "hint": "Starts with 'S'",
+    "answer": "Swimsuit",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the feet for formal occasions is?",
+    "hint": "Starts with 'D'",
+    "answer": "DressShoes",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn around the waist as a fashion accessory is?",
+    "hint": "Starts with 'B'",
+    "answer": "Belt",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn by women that covers the chest is?",
+    "hint": "Starts with 'B'",
+    "answer": "Bra",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the feet for casual activities is?",
+    "hint": "Starts with 'S'",
+    "answer": "Sneakers",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the hands for warmth is?",
+    "hint": "Starts with 'M'",
+    "answer": "Mittens",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the feet for sports activities is?",
+    "hint": "Starts with 'T'",
+    "answer": "Trainers",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the head for style or warmth is?",
+    "hint": "Starts with 'C'",
+    "answer": "Cap",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn by women that covers the legs is?",
+    "hint": "Starts with 'P'",
+    "answer": "Pantyhose",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn for swimming or sun protection is?",
+    "hint": "Starts with 'R'",
+    "answer": "Rashguard",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn on the feet for formal occasions is?",
+    "hint": "Starts with 'H'",
+    "answer": "Heels",
+    "category": "clothes"
+  },
+  {
+    "question": "A type of clothing worn to protect the head from the sun is?",
+    "hint": "Starts with 'V'",
+    "answer": "Visor",
+    "category": "clothes"
+  }
+]
