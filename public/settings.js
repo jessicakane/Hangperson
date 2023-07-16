@@ -77,10 +77,11 @@ const showUserStats = async (user) => {
   let minutes = Math.floor(+user.time / 60000);
   let seconds = Math.floor((+user.time % 60000) / 1000);
 
-  const bestTime =
-    minutes.toString().padStart(2, '0') +
-    ':' +
-    seconds.toString().padStart(2, '0');
+  const bestTime = user.time
+    ? minutes.toString().padStart(2, '0') +
+      ':' +
+      seconds.toString().padStart(2, '0')
+    : 'not set';
 
   gamesRatioEl.innerText += ` ${user.gamesWon}/${user.gamesPlayed}`;
   bestTimeEl.innerText += ` ${bestTime}`;

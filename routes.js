@@ -66,7 +66,11 @@ router.post('/users', async (req, res) => {
     return res.status(200).json(existingUser);
   }
 
-  const newUser = new User({ ...req.body, gamesPlayed: 0, gamesWon: 0 });
+  const newUser = new User({
+    ...req.body,
+    gamesPlayed: 0,
+    gamesWon: 0,
+  });
   const insertedUser = await newUser.save();
 
   return res.status(201).json(insertedUser);

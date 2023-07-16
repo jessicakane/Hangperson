@@ -117,7 +117,9 @@ window.addEventListener('load', async () => {
   const gameWon = async () => {
     userObj.gamesPlayed += 1;
     userObj.gamesWon += 1;
-    if (userObj.time && +userObj.time > elapsedTime) userObj.time = elapsedTime;
+    console.log(+userObj.time > elapsedTime);
+    if (!userObj.time || +userObj.time > elapsedTime)
+      userObj.time = elapsedTime;
 
     setCookie('user', JSON.stringify(userObj), COOKIE_EXP_DAYS);
 
