@@ -276,3 +276,13 @@ if (timerParam === 'true') {
   });
 }
 
+const cookieValue = getCookie("user");
+
+
+if (cookieValue && cookieValue.username) {
+  const username = cookieValue.username;
+
+  
+  const usernameElement = document.getElementById("displayName")
+  usernameElement.textContent = "User: " + username;
+} 
