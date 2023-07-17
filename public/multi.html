@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplayer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul id="messages"></ul>
+      <form id="question">
+        <div class="mb-3">
+          <label for="inputQuestion" class="form-label">Question</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputQuestion"
+            aria-describedby="questionHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputHint" class="form-label">Hint</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputHint"
+            aria-describedby="hitnHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputAnswer" class="form-label">Answer</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAnswer"
+            aria-describedby="answerHelp"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="waiting mt-3">Waiting for the other player...</div>
+      <button id="accept" class="btn btn-primary">Accept</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./multi.js"></script>
+  </body>
+</html>
