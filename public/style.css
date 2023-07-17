@@ -230,7 +230,7 @@ html
     color: green;
   }
   
-  .try-again {
+  .try-again, .time {
     background-color: #b6edb6;
     border: 2px solid green;
     color: green;
@@ -239,10 +239,33 @@ html
     border-radius: 30px;
     padding: 15px;
     font-size: 1.5rem;
-    top: 58%;
+    top: 69%;
     left: 32%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     visibility: hidden;
+  }
+
+  .time, .move-up {
+    top: 58%;
+    left: 30%;
+  }
+
+  .hint {
+    background-color: #fcf0de;
+    border: 2px solid red;
+    font-family: 'Indie Flower';
+    border-radius: 10px;
+    font-size: 2rem;
+    position: fixed;
+    top: 34%;
+    left: 3.9%;
+    color: red;
+    visibility: hidden;
+  }
+
+  .hint:hover {
+    background-color: #f9deb8;
+    transform: scale(1.1);
   }
 
   .try-again:hover {

@@ -6,6 +6,8 @@ const gameOverElement = document.querySelector('.game-over');
 const talkBubble = document.querySelector('.talk-bubble');
 const replayElement = document.querySelector('.try-again');
 const audio = new Audio('./soundEffects/chalkdrawing.mp3');
+const hintBubble = document.querySelector('.hint');
+const timeDisplay = document.querySelector('.time');
 
 const SERVER_URL = 'http://localhost:3000';
 const LIVES = 10;
@@ -145,13 +147,18 @@ window.addEventListener('load', async () => {
   }
 
   const checkGameStatus = (indexes) => {
+    if (livesLeft === 5) {
+      console.log('5 lives left');
+      hintBubble.classList.add('display');
+    }
     if (livesLeft === 0) {
       gameOverElement.innerText = 'Oh no! You killed me :(';
       talkBubble.classList.add('display');
-      replayElement.classList.add('display');
+      replayElement.classList.add('move-up');
       disableLettersClick();
-      game = 'over';
+      game = 'lost';
       updateUserStats(GAME.LOST);
+      hintBubble.classList.remove('display');
     }
 
     answerArray = answerArray.map((_, index) =>
@@ -164,10 +171,10 @@ window.addEventListener('load', async () => {
       gameOverElement.classList.add('green');
       talkBubble.classList.add('display');
       replayElement.textContent = 'Play again!';
-      replayElement.classList.add('display');
       disableLettersClick();
-      game = 'over';
+      game = 'won';
       updateUserStats(GAME.WON);
+      hintBubble.classList.remove('display');
     }
   };
 
@@ -202,6 +209,12 @@ window.addEventListener('load', async () => {
 
   const { question, hint, answer } = await getQuestionDB(categoryValue);
   answerArray = Array(answer.length).fill(1);
+  console.log(hint);
+
+  hintBubble.addEventListener('click', function() {
+    hintBubble.innerHTML = `<strong>${hint}</strong>`;
+    hintBubble.style.pointerEvents = 'none';
+  })
 
   livesElement.innerText = `Lives: ${livesLeft}`;
   questionElement.innerText = question;
@@ -232,8 +245,15 @@ function updateTimer() {
     ':' +
     seconds.toString().padStart(2, '0');
 
-  if (game === 'over') {
+  if (game === 'won') {
     gameTime = timerElement.textContent;
+    timeDisplay.innerHTML += `${gameTime}`;
+    timeDisplay.classList.add('display');
+    replayElement.classList.add('display');
+    return;
+  } else if (game === 'lost') {
+    gameTime = timerElement.textContent;
+    replayElement.classList.add('display');
     return;
   }
 
@@ -251,3 +271,4 @@ if (timerParam === 'true') {
     updateTimer();
   });
 }
+
