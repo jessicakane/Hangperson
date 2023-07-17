@@ -159,6 +159,7 @@ window.addEventListener('load', async () => {
       game = 'lost';
       updateUserStats(GAME.LOST);
       hintBubble.classList.remove('display');
+      replayElement.classList.add('display');
     }
 
     answerArray = answerArray.map((_, index) =>
@@ -253,7 +254,6 @@ function updateTimer() {
     return;
   } else if (game === 'lost') {
     gameTime = timerElement.textContent;
-    replayElement.classList.add('display');
     return;
   }
 
