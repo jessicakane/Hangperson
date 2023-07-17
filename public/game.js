@@ -176,6 +176,10 @@ window.addEventListener('load', async () => {
       game = 'won';
       updateUserStats(GAME.WON);
       hintBubble.classList.remove('display');
+      if (timerParam === 'false') {
+        replayElement.classList.add('move-up');
+        replayElement.classList.add('display');
+      }
     }
   };
 
