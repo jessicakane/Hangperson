@@ -42,6 +42,17 @@ function setCookie(name, value, expirationDays) {
   document.cookie = `${name}=${value}; expires=${expires.toUTCString()}; path=/`;
 }
 
+function putQuestionToCookies() {
+  const otherQuestions = questions.filter(
+    (q) => q.username !== getCookie('user').username
+  );
+  console.log(otherQuestions);
+  const cookieQuestion = objectToCookieString(
+    otherQuestions[Math.floor(Math.random() * otherQuestions.length)]
+  );
+  setCookie('question', cookieQuestion, 1);
+}
+
 formEl.addEventListener('submit', function (e) {
   e.preventDefault();
   question = formEl.querySelector('#inputQuestion').value;
@@ -52,13 +63,12 @@ formEl.addEventListener('submit', function (e) {
 
 acceptBtnEl.addEventListener('click', (e) => {
   socket.emit('accept question', { question, hint, answer });
-  const cookieQuestion = objectToCookieString(questions.pop());
-  setCookie('question', cookieQuestion, 1);
+  putQuestionToCookies();
   window.location.href = './game.html';
 });
 
 socket.on('connect', () => {
-  socket.emit('setUsername', getCookie('user').username);
+  socket.emit('setUsername', getCookie('user').username || 'Incognito');
 });
 
 socket.on('players ready', (questionsPool) => {

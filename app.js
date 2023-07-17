@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const http = require('http');
 const { Server } = require('socket.io');
-const getRoomConnections = require('./multi-utils');
+const { getRoomConnections } = require('./multi-utils');
 
 const routes = require('./routes');
 
@@ -42,7 +42,7 @@ io.on('connection', (socket) => {
     }
   });
 
-  socket.on('accept question', (msg) => (questionsPool = []));
+  // socket.on('accept question', (msg) => (questionsPool = []));
 });
 
 const start = async () => {
