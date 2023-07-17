@@ -20,7 +20,7 @@ html
   flex-basis: 35%;
 }
 .left-top{
- flex-basis: 33%;
+ flex-basis: 37%;
 }
 .left-bottom{
   flex: 1;
@@ -113,9 +113,7 @@ html
   .stats-title {
     border-bottom: 2px solid black;
     border-radius: 10px;
-    /*flex-basis: 17%;*/
     background-color: rgba(141, 173, 198, 0.5);
-    /*position: relative;*/
   }
 
   .stats {
@@ -139,7 +137,7 @@ html
     top: 0;
     left: 0;
     width: 33%;
-    height: 30%;
+    height: 33%;
   }
 
   .icon img {
@@ -275,6 +273,73 @@ html
 
   .display {
     visibility: visible;
+  }
+
+  nav {
+    background-color:antiquewhite;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid #CA670F;
+    position: fixed;
+    bottom: 1%;
+    left: 43%;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    
+  }
+  
+  nav ul li {
+    text-decoration: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:#CA670F;
+    padding: 5px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    border-radius: 10px;
+
+  }
+  
+  nav ul li a:hover {
+    background-color:#CA670F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  @keyframes bounceAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .best-time-styling {
+    color: #CA670F;
+    background-color: #fcf0de;
+    border-color: #CA670F;
+    left: 28%;
+    animation-name: bounceAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-fill-mode: both;
   }
 
   

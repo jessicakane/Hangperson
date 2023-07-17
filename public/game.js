@@ -8,6 +8,7 @@ const replayElement = document.querySelector('.try-again');
 const audio = new Audio('./soundEffects/chalkdrawing.mp3');
 const hintBubble = document.querySelector('.hint');
 const timeDisplay = document.querySelector('.time');
+const bestTimeAudio = new Audio('./soundEffects/besttime.mp3');
 
 const SERVER_URL = 'http://localhost:3000';
 const LIVES = 10;
@@ -122,6 +123,9 @@ window.addEventListener('load', async () => {
     console.log(+userObj.time > elapsedTime);
     if (!userObj.time || +userObj.time > elapsedTime)
       userObj.time = elapsedTime;
+      timeDisplay.innerHTML = `New best time! `;
+      timeDisplay.classList.add('best-time-styling');
+      bestTimeAudio.play();
 
     setCookie('user', JSON.stringify(userObj), COOKIE_EXP_DAYS);
 
