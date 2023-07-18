@@ -257,10 +257,9 @@ function updateTimer() {
 }
 
 let url = new URL(window.location.href);
-console.log(url);
 let timerParam = url.searchParams.get('timer');
 console.log(timerParam);
-if (timerParam === 'true') {
+if (timerParam === 'true' || !timerParam) {
   console.log("let's time this game!");
   window.addEventListener('load', function () {
     startTime = new Date().getTime();
