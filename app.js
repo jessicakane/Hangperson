@@ -14,6 +14,7 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 let questionsPool = [];
+const connectedUsernames = new Set();
 
 app.use(cors());
 app.use(express.static('public'));
@@ -26,9 +27,26 @@ app.get('/multi', (req, res) => {
 
 io.on('connection', (socket) => {
   socket.on('setUsername', (username) => {
+    // Check if the username is already in use
+    if (connectedUsernames.has(username)) {
+      // Reject the new connection with a custom error message
+      socket.emit('usernameError', 'Username is already in use');
+      socket.disconnect(true); // Disconnect the socket
+      return;
+    }
+
     socket.username = username;
+    connectedUsernames.add(username);
 
     console.log(`User ${username} connected with socket ID: ${socket.id}`);
+  });
+
+  socket.on('disconnect', () => {
+    // Remove the username from the set of connected usernames
+    if (socket.username) {
+      connectedUsernames.delete(socket.username);
+      console.log(`User ${socket.username} disconnected`);
+    }
   });
 
   socket.on('ask question', (msg) => {
@@ -41,8 +59,6 @@ io.on('connection', (socket) => {
       io.of('/').in('game-room').socketsLeave('game-room');
     }
   });
-
-  // socket.on('accept question', (msg) => (questionsPool = []));
 });
 
 const start = async () => {
