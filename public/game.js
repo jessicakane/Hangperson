@@ -62,6 +62,22 @@ window.addEventListener('load', async () => {
     return data;
   };
 
+  const getQuestion = async (category) => {
+    questionElement.innerText = 'Loading...';
+    let res;
+
+    if (getCookie('question')) return getCookie('question').data;
+
+    if (category && category !== 'surprise')
+      res = await fetch(`${SERVER_URL}/questions/${category}/random`);
+    else res = await fetch(`${SERVER_URL}/questions/random`);
+
+    const data = await res.json();
+    questionElement.innerText = '';
+
+    return data;
+  };
+
   const renderAnswer = (indexes) => {
     livesElement.innerText = `Lives: ${livesLeft}`;
 
@@ -200,7 +216,7 @@ window.addEventListener('load', async () => {
 
   const userObj = getCookie('user');
 
-  const { question, hint, answer } = await getQuestionDB(categoryValue);
+  const { question, hint, answer } = await getQuestion(categoryValue);
   answerArray = Array(answer.length).fill(1);
 
   livesElement.innerText = `Lives: ${livesLeft}`;

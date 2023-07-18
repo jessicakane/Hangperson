@@ -46,7 +46,6 @@ function putQuestionToCookies() {
   const otherQuestions = questions.filter(
     (q) => q.username !== getCookie('user').username
   );
-  console.log(otherQuestions);
   const cookieQuestion = objectToCookieString(
     otherQuestions[Math.floor(Math.random() * otherQuestions.length)]
   );
