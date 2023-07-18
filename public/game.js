@@ -49,19 +49,6 @@ function setCookie(name, value, expirationDays) {
 }
 
 window.addEventListener('load', async () => {
-  const getQuestionDB = async (category) => {
-    questionElement.innerText = 'Loading...';
-    let res;
-    if (category && category !== 'surprise')
-      res = await fetch(`${SERVER_URL}/questions/${category}/random`);
-    else res = await fetch(`${SERVER_URL}/questions/random`);
-
-    const data = await res.json();
-    questionElement.innerText = '';
-
-    return data;
-  };
-
   const getQuestion = async (category) => {
     questionElement.innerText = 'Loading...';
     let res;

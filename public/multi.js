@@ -1,9 +1,10 @@
 const socket = io();
 
-const messages = document.getElementById('messages');
+const message = document.getElementById('message');
 const formEl = document.getElementById('question');
 const input = document.getElementById('input');
 const acceptBtnEl = document.getElementById('accept');
+const submitBtnEl = document.getElementById('submitBtn');
 
 let question;
 let hint;
@@ -42,7 +43,12 @@ function setCookie(name, value, expirationDays) {
   document.cookie = `${name}=${value}; expires=${expires.toUTCString()}; path=/`;
 }
 
+function clearCookie(key) {
+  document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+}
+
 function putQuestionToCookies() {
+  clearCookie('question');
   const otherQuestions = questions.filter(
     (q) => q.username !== getCookie('user').username
   );
@@ -58,6 +64,10 @@ formEl.addEventListener('submit', function (e) {
   hint = formEl.querySelector('#inputHint').value;
   answer = formEl.querySelector('#inputAnswer').value;
   socket.emit('ask question', { question, hint, answer });
+
+  message.classList.remove('d-none');
+  submitBtnEl.disabled = true;
+  submitBtnEl.classList.add('d-none');
 });
 
 acceptBtnEl.addEventListener('click', (e) => {
@@ -73,4 +83,6 @@ socket.on('connect', () => {
 socket.on('players ready', (questionsPool) => {
   console.log(questionsPool);
   questions = questionsPool;
+  message.innerText = '';
+  acceptBtnEl.classList.remove('d-none');
 });

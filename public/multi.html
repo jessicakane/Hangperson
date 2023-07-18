@@ -21,6 +21,7 @@
         <div class="mb-3">
           <label for="inputQuestion" class="form-label">Question</label>
           <input
+            required
             type="text"
             class="form-control"
             id="inputQuestion"
@@ -30,6 +31,7 @@
         <div class="mb-3">
           <label for="inputHint" class="form-label">Hint</label>
           <input
+            required
             type="text"
             class="form-control"
             id="inputHint"
@@ -39,16 +41,21 @@
         <div class="mb-3">
           <label for="inputAnswer" class="form-label">Answer</label>
           <input
+            required
             type="text"
             class="form-control"
             id="inputAnswer"
             aria-describedby="answerHelp"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" id="submitBtn" class="btn btn-primary mb-3">
+          Submit
+        </button>
       </form>
-      <div class="waiting mt-3">Waiting for the other player...</div>
-      <button id="accept" class="btn btn-primary">Accept</button>
+      <div id="message" class="mt-3 d-none">
+        Waiting for the other player...
+      </div>
+      <button id="accept" class="btn btn-primary d-none">Accept</button>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="./multi.js"></script>
