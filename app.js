@@ -57,6 +57,7 @@ io.on('connection', (socket) => {
     if (getRoomConnections(io, 'game-room') > 1) {
       io.to('game-room').emit('players ready', questionsPool);
       io.of('/').in('game-room').socketsLeave('game-room');
+      questionsPool = [];
     }
   });
 });
