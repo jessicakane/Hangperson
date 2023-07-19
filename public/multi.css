@@ -1,0 +1,29 @@
+html, body{
+    font-family: 'Indie Flower', cursive;
+    background-color:antiquewhite;
+    
+
+  }
+
+  h1{
+    color:#CA670F; 
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .mb-3{
+    font-size: 2rem;
+    color: #CA670F;
+
+  }
+
+  #submitBtn{
+    color: antiquewhite;
+    background-color: #CA670F;
+
+  }
+  #submitBtn:hover{
+    color:#CA670F;
+    background-color: antiquewhite;
+    border:4px solid #CA670F;
+  }

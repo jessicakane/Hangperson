@@ -52,9 +52,12 @@ function setCookie(name, value, expirationDays) {
 }
 
 window.addEventListener('load', async () => {
-  const getQuestionDB = async (category) => {
+  const getQuestion = async (category) => {
     questionElement.innerText = 'Loading...';
     let res;
+
+    if (getCookie('question')) return getCookie('question').data;
+
     if (category && category !== 'surprise')
       res = await fetch(`${SERVER_URL}/questions/${category}/random`);
     else res = await fetch(`${SERVER_URL}/questions/random`);
@@ -216,7 +219,7 @@ window.addEventListener('load', async () => {
 
   const userObj = getCookie('user');
 
-  const { question, hint, answer } = await getQuestionDB(categoryValue);
+  const { question, hint, answer } = await getQuestion(categoryValue);
   answerArray = Array(answer.length).fill(1);
   console.log(hint);
 
@@ -269,10 +272,9 @@ function updateTimer() {
 }
 
 let url = new URL(window.location.href);
-console.log(url);
 let timerParam = url.searchParams.get('timer');
 console.log(timerParam);
-if (timerParam === 'true') {
+if (timerParam === 'true' || !timerParam) {
   console.log("let's time this game!");
   window.addEventListener('load', function () {
     startTime = new Date().getTime();
