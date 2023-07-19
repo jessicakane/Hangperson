@@ -90,3 +90,17 @@ const showUserStats = async (user) => {
 window.onload = async () => {
   if (getCookie('user')) await showUserStats(getCookie('user'));
 };
+
+
+const cookieValue = getCookie("user");
+
+
+if (cookieValue && cookieValue.username) {
+  const username = cookieValue.username;
+
+  
+  const usernameElement = document.getElementById("displayName")
+  usernameElement.textContent = "User: " + username;
+} 
+  
+

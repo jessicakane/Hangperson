@@ -20,7 +20,7 @@ html
   flex-basis: 35%;
 }
 .left-top{
- flex-basis: 33%;
+ flex-basis: 37%;
 }
 .left-bottom{
   flex: 1;
@@ -113,9 +113,7 @@ html
   .stats-title {
     border-bottom: 2px solid black;
     border-radius: 10px;
-    /*flex-basis: 17%;*/
     background-color: rgba(141, 173, 198, 0.5);
-    /*position: relative;*/
   }
 
   .stats {
@@ -139,7 +137,7 @@ html
     top: 0;
     left: 0;
     width: 33%;
-    height: 30%;
+    height: 33%;
   }
 
   .icon img {
@@ -230,7 +228,7 @@ html
     color: green;
   }
   
-  .try-again {
+  .try-again, .time {
     background-color: #b6edb6;
     border: 2px solid green;
     color: green;
@@ -239,10 +237,33 @@ html
     border-radius: 30px;
     padding: 15px;
     font-size: 1.5rem;
-    top: 58%;
+    top: 69%;
     left: 32%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     visibility: hidden;
+  }
+
+  .time, .move-up {
+    top: 58%;
+    left: 30%;
+  }
+
+  .hint {
+    background-color: #fcf0de;
+    border: 2px solid red;
+    font-family: 'Indie Flower';
+    border-radius: 10px;
+    font-size: 2rem;
+    position: fixed;
+    top: 34%;
+    left: 3.9%;
+    color: red;
+    visibility: hidden;
+  }
+
+  .hint:hover {
+    background-color: #f9deb8;
+    transform: scale(1.1);
   }
 
   .try-again:hover {
@@ -252,6 +273,73 @@ html
 
   .display {
     visibility: visible;
+  }
+
+  nav {
+    background-color:antiquewhite;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid #CA670F;
+    position: fixed;
+    bottom: 1%;
+    left: 43%;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    
+  }
+  
+  nav ul li {
+    text-decoration: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:#CA670F;
+    padding: 5px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    border-radius: 10px;
+
+  }
+  
+  nav ul li a:hover {
+    background-color:#CA670F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  @keyframes bounceAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .best-time-styling {
+    color: #CA670F;
+    background-color: #fcf0de;
+    border-color: #CA670F;
+    left: 28%;
+    animation-name: bounceAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-fill-mode: both;
   }
 
   

@@ -6,6 +6,9 @@ const gameOverElement = document.querySelector('.game-over');
 const talkBubble = document.querySelector('.talk-bubble');
 const replayElement = document.querySelector('.try-again');
 const audio = new Audio('./soundEffects/chalkdrawing.mp3');
+const hintBubble = document.querySelector('.hint');
+const timeDisplay = document.querySelector('.time');
+const bestTimeAudio = new Audio('./soundEffects/besttime.mp3');
 
 const SERVER_URL = 'http://localhost:3000';
 const LIVES = 10;
@@ -123,6 +126,9 @@ window.addEventListener('load', async () => {
     console.log(+userObj.time > elapsedTime);
     if (!userObj.time || +userObj.time > elapsedTime)
       userObj.time = elapsedTime;
+      timeDisplay.innerHTML = `New best time! `;
+      timeDisplay.classList.add('best-time-styling');
+      bestTimeAudio.play();
 
     setCookie('user', JSON.stringify(userObj), COOKIE_EXP_DAYS);
 
@@ -148,13 +154,19 @@ window.addEventListener('load', async () => {
   }
 
   const checkGameStatus = (indexes) => {
+    if (livesLeft === 5) {
+      console.log('5 lives left');
+      hintBubble.classList.add('display');
+    }
     if (livesLeft === 0) {
       gameOverElement.innerText = 'Oh no! You killed me :(';
       talkBubble.classList.add('display');
-      replayElement.classList.add('display');
+      replayElement.classList.add('move-up');
       disableLettersClick();
-      game = 'over';
+      game = 'lost';
       updateUserStats(GAME.LOST);
+      hintBubble.classList.remove('display');
+      replayElement.classList.add('display');
     }
 
     answerArray = answerArray.map((_, index) =>
@@ -167,10 +179,14 @@ window.addEventListener('load', async () => {
       gameOverElement.classList.add('green');
       talkBubble.classList.add('display');
       replayElement.textContent = 'Play again!';
-      replayElement.classList.add('display');
       disableLettersClick();
-      game = 'over';
+      game = 'won';
       updateUserStats(GAME.WON);
+      hintBubble.classList.remove('display');
+      if (timerParam === 'false') {
+        replayElement.classList.add('move-up');
+        replayElement.classList.add('display');
+      }
     }
   };
 
@@ -205,6 +221,12 @@ window.addEventListener('load', async () => {
 
   const { question, hint, answer } = await getQuestion(categoryValue);
   answerArray = Array(answer.length).fill(1);
+  console.log(hint);
+
+  hintBubble.addEventListener('click', function() {
+    hintBubble.innerHTML = `<strong>${hint}</strong>`;
+    hintBubble.style.pointerEvents = 'none';
+  })
 
   livesElement.innerText = `Lives: ${livesLeft}`;
   questionElement.innerText = question;
@@ -235,7 +257,13 @@ function updateTimer() {
     ':' +
     seconds.toString().padStart(2, '0');
 
-  if (game === 'over') {
+  if (game === 'won') {
+    gameTime = timerElement.textContent;
+    timeDisplay.innerHTML += `${gameTime}`;
+    timeDisplay.classList.add('display');
+    replayElement.classList.add('display');
+    return;
+  } else if (game === 'lost') {
     gameTime = timerElement.textContent;
     return;
   }
@@ -253,3 +281,14 @@ if (timerParam === 'true' || !timerParam) {
     updateTimer();
   });
 }
+
+const cookieValue = getCookie("user");
+
+
+if (cookieValue && cookieValue.username) {
+  const username = cookieValue.username;
+
+  
+  const usernameElement = document.getElementById("displayName")
+  usernameElement.textContent = "User: " + username;
+} 

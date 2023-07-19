@@ -12,6 +12,8 @@
     color: white;
     background-color: #CA670F;
     border-color: antiquewhite;
+    font-size: 1.5rem;
+    font-weight: bold;
     
   }
   
@@ -178,3 +180,58 @@
       stroke-dashoffset: 0;
     }
   }
+
+  #usernameInput{
+    color:#CA670F;
+    background-color: antiquewhite;
+    text-decoration: none;
+    border-radius: 10px ;
+    font-size: 1.5rem;
+  }
+
+  nav {
+    background-color:antiquewhite;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #CA670F;
+    position: fixed;
+    bottom: 1%;
+    left: 43%;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    
+  }
+  
+  nav ul li {
+    text-decoration: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:#CA670F;
+    padding: 5px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    border-radius: 10px;
+
+  }
+  
+  nav ul li a:hover {
+    background-color:#CA670F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
