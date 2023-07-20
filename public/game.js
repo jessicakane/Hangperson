@@ -51,12 +51,23 @@ function setCookie(name, value, expirationDays) {
   document.cookie = `${name}=${value}; expires=${expires.toUTCString()}; path=/`;
 }
 
+function clearCookie(key) {
+  document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+}
+
 window.addEventListener('load', async () => {
   const getQuestion = async (category) => {
     questionElement.innerText = 'Loading...';
     let res;
 
-    if (getCookie('question')) return getCookie('question').data;
+    if (
+      document.referrer === SERVER_URL + 'multi.html' &&
+      getCookie('question')
+    ) {
+      const question = getCookie('question').data;
+      clearCookie('question');
+      return question;
+    }
 
     if (category && category !== 'surprise')
       res = await fetch(`${SERVER_URL}/questions/${category}/random`);
@@ -126,9 +137,9 @@ window.addEventListener('load', async () => {
     console.log(+userObj.time > elapsedTime);
     if (!userObj.time || +userObj.time > elapsedTime)
       userObj.time = elapsedTime;
-      timeDisplay.innerHTML = `New best time! `;
-      timeDisplay.classList.add('best-time-styling');
-      bestTimeAudio.play();
+    timeDisplay.innerHTML = `New best time! `;
+    timeDisplay.classList.add('best-time-styling');
+    bestTimeAudio.play();
 
     setCookie('user', JSON.stringify(userObj), COOKIE_EXP_DAYS);
 
@@ -223,10 +234,10 @@ window.addEventListener('load', async () => {
   answerArray = Array(answer.length).fill(1);
   console.log(hint);
 
-  hintBubble.addEventListener('click', function() {
+  hintBubble.addEventListener('click', function () {
     hintBubble.innerHTML = `<strong>${hint}</strong>`;
     hintBubble.style.pointerEvents = 'none';
-  })
+  });
 
   livesElement.innerText = `Lives: ${livesLeft}`;
   questionElement.innerText = question;
@@ -282,13 +293,11 @@ if (timerParam === 'true' || !timerParam) {
   });
 }
 
-const cookieValue = getCookie("user");
-
+const cookieValue = getCookie('user');
 
 if (cookieValue && cookieValue.username) {
   const username = cookieValue.username;
 
-  
-  const usernameElement = document.getElementById("displayName")
-  usernameElement.textContent = "User: " + username;
-} 
+  const usernameElement = document.getElementById('displayName');
+  usernameElement.textContent = 'User: ' + username;
+}
